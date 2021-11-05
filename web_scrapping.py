@@ -74,14 +74,10 @@ def get_data(url):
 
 data = get_data(url)
 
-"""
+
 with open("data.csv", 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(['Date', 'Sunshine', 'Wind', 'Rain', 'Temperature'])
     for i in data:
-        writer.writerow(str(i))
-"""
-with open("data.txt", 'w') as file:
-    file.write("        Date          Sunshine     wind      rain      temperature\n")
-    for i in data:
-        file.write(str(i))
+        row = str(i).split(",")
+        writer.writerow([row[0], row[1], row[2], row[3], row[4]])

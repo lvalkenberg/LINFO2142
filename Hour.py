@@ -128,7 +128,7 @@ class Hour :
         #message = "On {0} the sunshine will be {1}/6, there will be a wind of {2}".format(self.date, self.sunshine, self.wind)
         #message += "km/h, {0} mm of rain and a temperature of {1} °C.".format(self.rain, self.temperature)
         
-        message = "{0},      {1},        {2},       {3},         {4}\n".format(self.date, self.sunshine, self.wind, self.rain, self.temperature)
+        message = "{0},{1},{2},{3},{4}".format(self.date, self.sunshine, self.wind, self.rain, self.temperature)
         return message
 
 """
