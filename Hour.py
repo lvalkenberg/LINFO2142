@@ -1,9 +1,3 @@
-"""
-Créé le 13/08/2021
-
-@Auteur : Constantin van Ypersele
-
-"""
 
 class Hour :
     
