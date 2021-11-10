@@ -79,7 +79,7 @@ def launch():
 
     data = get_data(url)
 
-    with open("data.csv", 'w', newline='') as file:
+    with open("data.csv", 'a', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Date', 'Sunshine', 'Wind', 'Rain', 'Temperature'])
         for i in data:
