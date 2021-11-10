@@ -5,3 +5,5 @@ Essayer de voir quand on change de station de base (traceroute). Base dépend de
 Essayer de voir si on peut pas employer les centres de Mlab comme cible.
 
 buienradar
+
+Pour lancer le script il faut entrer la commande suivante `<python3 MyScript.py>`
