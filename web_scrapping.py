@@ -67,17 +67,21 @@ def get_data(url):
             pic[-1] = "moon"
         pic = pic[-1]
         
-        hours.append(Hour(jour, dic_nuage[pic], vent, precipitation, temperature))
-        
+        if pic in dic_nuage:
+            hours.append(Hour(jour, dic_nuage[pic], vent, precipitation, temperature))
+        else:
+            print("ERREUR WEBSCRAPING : IMAGE {0} NON RECONNUE".format(pic))
+
     return hours
 
 
-data = get_data(url)
+def launch():
 
+    data = get_data(url)
 
-with open("data.csv", 'w', newline='') as file:
-    writer = csv.writer(file)
-    writer.writerow(['Date', 'Sunshine', 'Wind', 'Rain', 'Temperature'])
-    for i in data:
-        row = str(i).split(",")
-        writer.writerow([row[0], row[1], row[2], row[3], row[4]])
+    with open("data.csv", 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['Date', 'Sunshine', 'Wind', 'Rain', 'Temperature'])
+        for i in data:
+            row = str(i).split(",")
+            writer.writerow([row[0], row[1], row[2], row[3], row[4]])

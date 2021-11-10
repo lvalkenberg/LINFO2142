@@ -15,6 +15,8 @@ import csv
 
 def main(hours, output_file):
 
+    launch()  #launch web-scrapping
+
     end =  datetime.now() + timedelta(hours=hours)
     
     with open(output_file, 'w', newline='') as file:
@@ -40,6 +42,8 @@ def main(hours, output_file):
 
             for key, value in dic.items():
                 writer.writerow([now, key, value[0]/value[1]])
+            
+            file.flush()
             
             time.sleep(6*60)
 
