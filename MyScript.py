@@ -15,37 +15,37 @@ import csv
 
 def main(hours, output_file):
 
+    launch()  #launch web-scrapping
+
     end =  datetime.now() + timedelta(hours=hours)
     
     with open(output_file, 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(['Date', 'Destination', 'Ping'])
 
-        i = 0
-        while datetime.now() != end and i < 2:
+        while datetime.now() < end :
             
             dic = {}
             for j in range(10):
                 res = Measurement(destinations)
                 
                 for a,b in res:
-                    if a == None or b == None:
-                        print("UNEXPECTED NONE")
-                        continue
 
-                    if a in dic:
-                        dic[a] += b
+                    if a in dic and b != None:
+                        dic[a] = (dic[a][0] + b, dic[a][1] +1)    
+                    elif a not in dic and b != None:
+                        dic[a] = (b, 1)
                     else:
-                        dic[a] = b
+                        continue #cas ou b (le ping) est None
             
             now = datetime.now()
+
             for key, value in dic.items():
-                writer.writerow([now, key, value/10])
+                writer.writerow([now, key, value[0]/value[1]])
             
-            time.sleep(6+60)
+            file.flush()
             
-            
-            i+=1 #enlever le i 
+            time.sleep(6*60)
 
     
 

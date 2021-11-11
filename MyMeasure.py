@@ -9,7 +9,7 @@ destinations = ["iperf.par2.as49434.net", "iperf.biznetnetworks.com", "iperf.sco
 def MyPing(dest):
 
     try:
-        return ping(dest, timeout=10) #¶return none in case of timeout
+        return ping(dest, timeout=20) #¶return none in case of timeout
     
     except:
         return "PING ERROR"
@@ -33,7 +33,7 @@ def Measurement(destinations):
     
     res = []
     for dest in destinations:
-        a  = (dest,MyPing(dest))  #Comment traiter les "None" ?
+        a  = (dest,MyPing(dest))  #Comment traiter les "None" ? -> augmenter le timeout
         res.append(a)
 
     return res
