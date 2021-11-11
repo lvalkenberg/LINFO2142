@@ -16,6 +16,7 @@ def MyPing(dest, to=20):
         return ping(dest, timeout=to) #¶return none in case of timeout
     
     except:
+        print("PING ERROR")
         return "PING ERROR"
 
 """
