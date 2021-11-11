@@ -12,3 +12,6 @@ Le script va commencer par récupérer les données météo sur le site https://
 
 Pour lancer le script il faut entrer la commande suivante : `python3 MyScript.py {heure} {fichier}` où `{heure}` est le nombre d'heure durant lesquelles le script va faire des mesures et `{fichier}` le nom du fichier .csv de sortie.
 
+## Packages
+
+pip3 install ping3 dnspython speedtest-cli
