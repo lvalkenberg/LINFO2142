@@ -41,7 +41,7 @@ def main(hours, output_file):
             now = datetime.now()
 
             for key, value in dic.items():
-                writer.writerow([now, key, value[0]/value[1]])
+                writer.writerow([now, key, int(value[0])/value[1]])
             
             file.flush()
             
