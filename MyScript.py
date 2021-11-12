@@ -30,27 +30,32 @@ def main(hours, output_file, one_time=0):
     with open(output_file, open_type, newline='') as file:
         writer = csv.writer(file)
         if(open_type == "w"):
-            writer.writerow(['Date', 'Destination', 'Ping'])
+            writer.writerow(['Date', 'Destination', 'Ping', 'Lost'])
 
         while datetime.now() < end :
             
             dic = {}
-            for j in range(10):
+            lost = {}
+            for j in range(20):
                 res = Measurement(destinations)
                 
                 for a,b in res:
+                    
+                    if(a not in lost):
+                            lost[a] = 0
 
                     if a in dic and b != None:
                         dic[a] = (dic[a][0] + b, dic[a][1] +1)    
                     elif a not in dic and b != None:
                         dic[a] = (b, 1)
-                    else:
+                    else: #cas ou b (le ping) est None
+                        lost[a] += 1
                         continue #cas ou b (le ping) est None
             
             now = datetime.now()
 
             for key, value in dic.items():
-                writer.writerow([now, key, value[0]/value[1]])
+                writer.writerow([now, key, value[0]/value[1], lost[key]/(lost[key] + value[1])])
             
             file.flush()
             
