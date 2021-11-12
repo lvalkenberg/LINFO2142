@@ -18,15 +18,11 @@ destinations = ["iperf.par2.as49434.net", "iperf.biznetnetworks.com", "iperf.sco
     Send ping to dest and return none in case of timeout (20s default)
 """
 def Ping(dest, to=None):
-    try:
-        if(to == None):
-            return ping(dest) #¶return none in case of timeout
-        else:
-            return ping(dest, to)
-    
-    except:
-        print("PING ERROR")
-        return "PING ERROR"
+
+    if(to == None):
+        return ping(dest) #¶return none in case of timeout
+    else:
+        return ping(dest, to)
     
 def main(output_file, number):
 
