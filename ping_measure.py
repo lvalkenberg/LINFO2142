@@ -59,7 +59,10 @@ def main(output_file, number):
                     print("PING ERROR")
         
             now = datetime.now()
-            writer.writerow([now, dest, global_delay/nb_mesures, lost/number])
+            if(nb_mesures != 0):
+                writer.writerow([now, dest, global_delay/nb_mesures, lost/number])
+            else:
+                 writer.writerow([now, dest, 'NaN', lost/number])
         
         file.flush()
 
