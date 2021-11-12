@@ -44,11 +44,11 @@ def main(output_file):
 
         res = bw_speedtest()
         
-        print(res.server['url'])
-        print([res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
+        # print(res.server['url'])
+        # print([res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
         
         now = datetime.now()
-        #writer.writerow([now, key, value[0]/value[1], lost[key]/(lost[key] + value[1])])
+        writer.writerow([now,res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
             
         file.flush()  
 
