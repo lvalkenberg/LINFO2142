@@ -42,17 +42,16 @@ def main(output_file, number):
             nb_mesures = 0
             lost = 0
             for i in range(number):
-                try:
-                    ping_val= ping(dest)
-                    if(ping_val != None and ping_val != False):
-                        global_delay += ping_val
-                        nb_mesures += 1
-                    elif(ping_val == None): #timeout
-                        lost += 1
-                    else:
-                        print("PING ERROR, return false")
-                except:
-                    print("PING ERROR")
+             
+                ping_val= ping(dest)
+                if(ping_val != None and ping_val != False):
+                    global_delay += ping_val
+                    nb_mesures += 1
+                elif(ping_val == None): #timeout
+                    lost += 1
+                else:
+                    print("PING ERROR, return false")
+
         
             now = datetime.now()
             if(nb_mesures != 0):
