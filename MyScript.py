@@ -12,16 +12,25 @@ import time
 import sys
 import csv
 
-
-def main(hours, output_file):
+"""
+    Lance les différentes mesures
+"""
+def main(hours, output_file, one_time=0):
 
     launch()  #launch web-scrapping
 
     end =  datetime.now() + timedelta(hours=hours)
     
-    with open(output_file, 'w', newline='') as file:
+    # Open type : happend if only one execution or create a new file
+    if(one_time != 0):
+        open_type = "a"
+    else:
+        open_type = "w"
+    
+    with open(output_file, open_type, newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Date', 'Destination', 'Ping'])
+        if(open_type == "w"):
+            writer.writerow(['Date', 'Destination', 'Ping'])
 
         while datetime.now() < end :
             
@@ -45,6 +54,9 @@ def main(hours, output_file):
             
             file.flush()
             
+            if(one_time != 0): # Exectute the script only one time
+                return 0
+            
             time.sleep(6*60)
 
     
@@ -52,10 +64,13 @@ def main(hours, output_file):
     return 0
 
 
-if len(sys.argv) != 3 :
+if len(sys.argv) != 3 and len(sys.argv) != 4:
     print("ERROR : wrong format !")
-    print('You must enter : python3 MySCript.py {number of hours} {output file.csv}')
+    print('You must enter : python3 MySCript.py {number of hours} {output file.csv} {execute only one time si != 0, default=0}')
 
 else:
-    main(int(sys.argv[1]), sys.argv[2])
+    if len(sys.argv) == 3:
+        main(int(sys.argv[1]), sys.argv[2])
+    if len(sys.argv) == 4:
+        main(int(sys.argv[1]), sys.argv[2], sys.argv[3])
     
