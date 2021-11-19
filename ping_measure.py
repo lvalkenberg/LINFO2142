@@ -35,31 +35,36 @@ def main(output_file, number):
     with open(output_file, open_type, newline='') as file:
         writer = csv.writer(file)
         if(open_type == "w"):
-            writer.writerow(['Date', 'Destination', 'Ping', 'Lost'])
+            writer.writerow(['Date', 'Destination', 'Ping', 'Lost', 'Measurment', 'Error'])
 
         for dest in destinations:
             global_delay = 0
             nb_mesures = 0
             lost = 0
+            error = 0
+            pings_tab = []
             for i in range(number):
                 try:
                     ping_val= ping(dest)
                     if(ping_val != None and ping_val != False):
                         global_delay += ping_val
+                        pings_tab += ping_val
                         nb_mesures += 1
                     elif(ping_val == None): #timeout
+                        pings_tab += 'NaN'
                         lost += 1
                     else:
-                        print("PING ERROR, return false")
+                        error += 1
                 except:
                     print("PING ERROR")
 
         
             now = datetime.now()
-            if(nb_mesures != 0):
-                writer.writerow([now, dest, global_delay/nb_mesures, lost/number])
-            else:
-                 writer.writerow([now, dest, 'NaN', lost/number])
+            writer.writerow([now, dest, pings_tab, lost/number, number, error])
+            # if(nb_mesures != 0):
+            #     writer.writerow([now, dest, global_delay/nb_mesures, lost/number])
+            # else:
+            #      writer.writerow([now, dest, 'NaN', lost/number])
         
         file.flush()
 

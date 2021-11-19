@@ -41,14 +41,13 @@ def main(output_file):
         writer = csv.writer(file)
         if(open_type == "w"):
             writer.writerow(['date','country','name','host','id','download', 'upload', 'ping', 'd'])
-
-        res = bw_speedtest()
-        
-        # print(res.server['url'])
-        # print([res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
         
         now = datetime.now()
-        writer.writerow([now,res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
+        try:
+            res = bw_speedtest()
+            writer.writerow([now,res.server["country"],res.server["name"],res.server["host"],res.server["id"], res.download, res.upload, res.ping, res.server["d"]])
+        except:
+             writer.writerow([now,'NaN'])
             
         file.flush()  
 
