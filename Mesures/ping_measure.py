@@ -48,15 +48,16 @@ def main(output_file, number):
                     ping_val= ping(dest)
                     if(ping_val != None and ping_val != False):
                         global_delay += ping_val
-                        pings_tab += ping_val
+                        pings_tab.append(ping_val)
                         nb_mesures += 1
                     elif(ping_val == None): #timeout
-                        pings_tab += 'NaN'
+                        pings_tab.append('NaN')
                         lost += 1
                     else:
                         error += 1
-                except:
+                except Exception as e:
                     print("PING ERROR")
+                    print(e)
 
         
             now = datetime.now()
