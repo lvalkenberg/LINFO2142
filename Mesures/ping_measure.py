@@ -12,7 +12,7 @@ import os
 from ping3 import ping
 
 destinations = ["iperf.par2.as49434.net", "iperf.biznetnetworks.com", "iperf.scottlinux.com", "iperf.eenet.ee", 
-                "speedtest.uztelecom.uz" ] 
+                "speedtest.uztelecom.uz", "lille.testdebit.info", "speedtest.serverius.net" ] 
 
 """
     Send ping to dest and return none in case of timeout (20s default)
