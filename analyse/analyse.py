@@ -68,13 +68,13 @@ def traceroute_analyse(file="../Mesures/traceroute_measure.csv"):
     for serv in dic.keys():
         for d in dic[serv].keys():
 
-            if dic[serv][d] not in occurence:
-                occurence[serv] = (dic[serv][d], 1)
+        #    if dic[serv][d] not in occurence:
+        #        occurence[serv] = (dic[serv][d], 1)
             
-            else:
-                occurence[serv] = (dic[serv][d], occurence[serv][1] + 1)
+        #    else:
+        #        occurence[serv] = (dic[serv][d], occurence[serv][1] + 1)
         
-        print("Pour le serveur {0} il y a {1} chemins différents".format(serv, len(occurence[serv]))) 
+        #print("Pour le serveur {0} il y a {1} chemins différents".format(serv, len(occurence[serv]))) 
 
             
 
