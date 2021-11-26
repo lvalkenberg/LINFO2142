@@ -4,7 +4,7 @@ temporary_file=traceroute.txt
 final_file=traceroute_measure.csv
 
 # Declare an array of string with type  "iperf.par2.as49434.net" => Serveur down ?
-declare -a Servers=("iperf.biznetnetworks.com" "iperf.scottlinux.com" "iperf.eenet.ee" "speedtest.uztelecom.uz" )
+declare -a Servers=("iperf.biznetnetworks.com" "iperf.scottlinux.com" "iperf.eenet.ee" "speedtest.uztelecom.uz" "lille.testdebit.info" "speedtest.serverius.net")
 
 currentdate=`date +"%Y-%m-%d %T"`
 
@@ -13,7 +13,7 @@ echo "${currentdate}" > "${temporary_file}"
 
 # Iterate the string array using for loop
 for server in ${Servers[@]}; do
-   echo "$(traceroute -m 7 --resolve-hostname $server)" >> "${temporary_file}"
+   echo "$(traceroute -m 20 --resolve-hostname $server)" >> "${temporary_file}"
 done
 
 python3 traceroute.py "${temporary_file}" "${final_file}"
