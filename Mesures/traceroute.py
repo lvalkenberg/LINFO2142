@@ -13,7 +13,6 @@ def process(input, output_writer):
     for line in input:
         try:
 
-            print(line)
             line = line.split()
 
             if line[0] == "traceroute":

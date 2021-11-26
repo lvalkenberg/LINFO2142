@@ -12,7 +12,8 @@ import os
 from ping3 import ping
 import random
 
-destinations = ["iperf.par2.as49434.net", "iperf.biznetnetworks.com", "iperf.scottlinux.com", "iperf.eenet.ee", 
+#"iperf.par2.as49434.net"
+destinations = [ "iperf.biznetnetworks.com", "iperf.scottlinux.com", "iperf.eenet.ee", 
                 "speedtest.uztelecom.uz", "lille.testdebit.info", "speedtest.serverius.net" ] 
 
 """
