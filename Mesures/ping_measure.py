@@ -4,7 +4,7 @@ Created on Fri Nov 12 12:33:07 2021
 
 @author: louis
 """
-import time
+import time as tm
 from datetime import *
 import sys
 import csv
@@ -28,7 +28,7 @@ def Ping(dest, to=None):
     
 def main(output_file, number):
     
-    time.sleep(random.randrange(10)) #wait random time betwenn 10s
+    tm.sleep(random.randrange(10)) #wait random time betwenn 10s
 
     # Open type : happend if only one execution or create a new file
     if(os.path.isfile(output_file)):
