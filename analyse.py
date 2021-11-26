@@ -24,7 +24,6 @@ def mean_ping(pings):
     return mean_ping
         
 
-
 def traceroute_analyse(file="Mesures/traceroute_measure.csv"):
     
     dic = {}

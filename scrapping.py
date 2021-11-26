@@ -46,6 +46,8 @@ def main(output_file):
         # meteobelgique
         source = requests.get(url, headers=headers)
         
+        data = [datetime.now()]
+        
         # if couldn't get the html retry multiple times
         counter = 0
         while not source.ok:
@@ -54,6 +56,8 @@ def main(output_file):
             source = requests.get(url)
             if(counter == 1):
                 print("UNABLE TO REACH THE SERVER")
+                writer.writerow(datas)
+                file.flush()
                 return 0;
         
         # Ajoute les donnée de la prochaine heure dans le fichier f
@@ -75,6 +79,8 @@ def main(output_file):
             source = requests.get(url)
             if(counter == 1):
                 print("UNABLE TO REACH THE SERVER")
+                writer.writerow(datas)
+                file.flush()
                 return 0;
         
         # Ajoute les donnée de la prochaine heure dans le fichier f
