@@ -23,7 +23,7 @@ def mean_ping(pings):
     return mean_ping
         
 
-ping_csv = pd.read_csv("data/measure_ping.csv")
+ping_csv = pd.read_csv("../data/measure_ping.csv")
 
 mask = ping_csv["Destination"]=="speedtest.uztelecom.uz"
 uztelecom_ping = ping_csv.loc[mask, ["Ping"]]
