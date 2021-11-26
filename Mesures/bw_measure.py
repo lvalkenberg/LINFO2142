@@ -33,7 +33,7 @@ def bw_speedtest():
 
 def main(output_file):
     
-    time.sleep(random.randrange(60)) #wait random time betwenn 10s
+    time.sleep(random.randrange(90)) #wait random time betwenn 10s
 
     # Open type : happend if only one execution or create a new file
     if(os.path.isfile(output_file)):
