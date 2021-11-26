@@ -45,7 +45,7 @@ weather_csv = pd.read_csv("../data/measure_weather.csv")
 
 ping_array = np.array(ping_csv)
 weather_array = np.array(weather_csv)
-# print(fusion_with_weather(np.array(ping_csv), np.array(weather_csv)))
+ping_weather_array = fusion_with_weather(np.array(ping_csv), np.array(weather_csv))
 print(np.unique(weather_array[:,1]))
 
 # print(datetime.strptime(ping_array[0][0][0:13], "%Y-%m-%d %H") + timedelta(hours=8))

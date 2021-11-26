@@ -10,6 +10,7 @@ import sys
 import csv
 import os
 from ping3 import ping
+import random
 
 destinations = ["iperf.par2.as49434.net", "iperf.biznetnetworks.com", "iperf.scottlinux.com", "iperf.eenet.ee", 
                 "speedtest.uztelecom.uz", "lille.testdebit.info", "speedtest.serverius.net" ] 
@@ -25,6 +26,8 @@ def Ping(dest, to=None):
         return ping(dest, to)
     
 def main(output_file, number):
+    
+    time.sleep(random.randrange(10)) #wait random time betwenn 10s
 
     # Open type : happend if only one execution or create a new file
     if(os.path.isfile(output_file)):

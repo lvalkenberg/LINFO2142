@@ -4,6 +4,8 @@ import csv
 import os
 import speedtest #https://www.speedtest.net/fr
 import os
+import time
+import random
 
 """
     Run bandwith mesurement with speedtest on the closest (distance (km)) available server
@@ -30,6 +32,8 @@ def bw_speedtest():
     return s.results
 
 def main(output_file):
+    
+    time.sleep(random.randrange(60)) #wait random time betwenn 10s
 
     # Open type : happend if only one execution or create a new file
     if(os.path.isfile(output_file)):
