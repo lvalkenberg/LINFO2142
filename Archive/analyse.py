@@ -50,7 +50,6 @@ def traceroute_analyse(file="Mesures/traceroute_measure.csv"):
 
     occurence = {}  #Dictionnaire< serveur, different_traceroute> où different_traceroute est un resume de toutes les tracroute du serveur
     for serv in dic.keys():
-        message=""
         for d in dic[serv].keys():
 
             if dic[serv][d] not in occurence:

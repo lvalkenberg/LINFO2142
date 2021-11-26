@@ -1,122 +1,88 @@
-2021-11-26 12:42:22
+2021-11-26 16:50:41
 traceroute to iperf.biznetnetworks.com (117.102.109.186), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  1,490ms  1,428ms  1,491ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  1,561ms  1,388ms  1,381ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  2,194ms  1,524ms  1,389ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  1,844ms  1,972ms  1,560ms 
-  5   10.28.17.154 (10.28.17.154)  3,024ms  2,781ms  2,698ms 
-  6   194.53.172.33 (he.bnix.net)  3,902ms  3,633ms  3,604ms 
-  7   184.104.193.137 (100ge5-1.core1.par2.he.net)  9,743ms  9,780ms  * 
-  8   184.105.81.30 (port-channel4.core2.mrs1.he.net)  22,657ms  20,102ms  20,044ms 
-  9   184.105.65.13 (100ge14-2.core1.sin1.he.net)  228,231ms  174,145ms  205,231ms 
- 10   74.82.50.70 (biznet-networks-singapore-pte.e0-11.switch1.sin1.he.net)  204,546ms  155,959ms  202,165ms 
- 11   182.253.255.185 (182.253.255.185)  204,543ms  199,194ms  205,654ms 
- 12   182.253.100.193 (182.253.100.193)  204,822ms  201,962ms  206,153ms 
- 13   *  *  * 
- 14   *  *  * 
- 15   *  *  * 
- 16   *  *  * 
- 17   *  *  * 
- 18   *  *  * 
- 19   *  *  * 
- 20   *  *  * 
-traceroute to iperf.scottlinux.com (45.33.39.39), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  2,016ms  3,802ms  5,102ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  37,511ms  327,374ms  12,295ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  1,611ms  1,437ms  1,518ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  2,191ms  3,105ms  1,891ms 
-  5   10.28.87.213 (10.28.87.213)  3,905ms  4,051ms  2,558ms 
-  6   *  *  * 
-  7   154.25.12.245 (be2525.rcr21.bru01.atlas.cogentco.com)  4,912ms  3,473ms  3,320ms 
-  8   154.54.57.177 (be3676.ccr41.ams03.atlas.cogentco.com)  8,553ms  7,376ms  7,937ms 
-  9   130.117.51.41 (be12488.ccr42.lon13.atlas.cogentco.com)  187,848ms  177,283ms  206,623ms 
- 10   154.54.42.85 (be2490.ccr42.jfk02.atlas.cogentco.com)  103,027ms  177,259ms  211,254ms 
- 11   154.54.47.49 (be2889.ccr21.cle04.atlas.cogentco.com)  111,421ms  160,880ms  205,300ms 
- 12   154.54.7.129 (be2718.ccr42.ord01.atlas.cogentco.com)  208,550ms  175,325ms  205,835ms 
- 13   154.54.42.165 (be2831.ccr21.mci01.atlas.cogentco.com)  204,784ms  182,132ms  204,967ms 
- 14   154.54.5.89 (be3035.ccr21.den01.atlas.cogentco.com)  201,192ms  182,747ms  205,744ms 
- 15   154.54.41.145 (be3037.ccr21.slc01.atlas.cogentco.com)  202,125ms  180,546ms  204,593ms 
- 16   154.54.44.141 (be3110.ccr22.sfo01.atlas.cogentco.com)  204,859ms  181,057ms  204,974ms 
- 17   154.54.43.70 (be3178.ccr21.sjc01.atlas.cogentco.com)  206,548ms  178,659ms  151,925ms 
- 18   154.54.43.70 (be3178.ccr21.sjc01.atlas.cogentco.com)  156,842ms  202,047ms  205,854ms 
- 19   154.54.3.138 (be2095.rcr21.b001848-1.sjc01.atlas.cogentco.com)  202,719ms  180,989ms  209,362ms 
- 20   173.230.159.81 (if-1-4.csw5-fnc1.linode.com)  198,534ms  254,157ms  203,908ms 
-traceroute to iperf.eenet.ee (193.40.55.7), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  1,640ms  2,570ms  2,060ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  2,421ms  1,229ms  1,302ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  3,329ms  2,785ms  2,852ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  2,462ms  2,072ms  1,686ms 
-  5   10.28.17.157 (10.28.17.157)  23,469ms  6,474ms  4,772ms 
-  6   62.40.127.134 (belnet-gw.mx1.ams.nl.geant.net)  5,786ms  6,096ms  6,670ms 
-  7   62.40.98.61 (ae1.mx1.ham.de.geant.net)  12,587ms  18,486ms  12,432ms 
-  8   62.40.98.59 (ae5.rt2.tal.ee.geant.net)  32,466ms  33,926ms  32,298ms 
+  1   192.168.42.1 (_gateway)  5,139ms  0,843ms  0,801ms 
+  2   192.168.1.1 (192.168.1.1)  1,383ms  1,467ms  1,265ms 
+  3   136.22.97.33 (136.22.97.33)  48,894ms  54,345ms  55,949ms 
+  4   142.250.160.202 (142.250.160.202)  48,079ms  52,295ms  47,931ms 
+  5   *  194.146.118.80 (as6939.dusseldorf.megaport.com)  72,551ms  63,508ms 
+  6   184.104.195.25 (100ge6-1.core1.fra1.he.net)  47,769ms  47,964ms  48,236ms 
+  7   184.105.65.29 (100ge5-1.core1.zrh2.he.net)  55,624ms  55,312ms  47,932ms 
+  8   91.206.52.170 (10gigabitethernet1-4.core1.zrh1.he.net)  55,468ms  55,490ms  47,793ms 
   9   *  *  * 
+ 10   184.104.193.125 (100ge16-2.core1.mrs1.he.net)  72,754ms  156,784ms  74,242ms 
+ 11   27.50.33.110 (biznet-networks.gigabitethernet2-6.core1.sin1.he.net)  296,101ms  306,586ms  307,294ms 
+ 12   182.253.255.46 (182.253.255.46)  307,295ms  283,664ms  287,005ms 
+ 13   182.253.100.193 (182.253.100.193)  350,126ms  406,807ms  307,186ms 
+ 14   117.102.109.186 (117.102.109.186)  278,666ms !*  278,290ms !*  283,877ms !* 
+traceroute to iperf.scottlinux.com (45.33.39.39), 20 hops max
+  1   192.168.42.1 (_gateway)  0,724ms  0,774ms  1,259ms 
+  2   192.168.1.1 (192.168.1.1)  1,394ms  1,297ms  1,298ms 
+  3   136.22.97.33 (136.22.97.33)  38,498ms  41,696ms  39,993ms 
+  4   136.22.254.44 (136.22.254.44)  40,351ms  37,583ms  39,527ms 
+  5   195.89.98.65 (ae46-0-xcr1.fix.cw.net)  40,202ms  38,934ms  40,018ms 
+  6   195.2.20.226 (ae17.pcr1.fnt.cw.net)  210,476ms  192,766ms  188,559ms 
+  7   195.2.16.230 (ae37-pcr1.ptl.cw.net)  232,118ms  190,165ms  191,855ms 
+  8   195.2.24.241 (et-7-1-0-xcr1.nyh.cw.net)  231,129ms  204,048ms  205,690ms 
+  9   195.2.31.5 (195.2.31.5)  203,586ms  205,555ms  203,343ms 
+ 10   195.2.24.97 (ae1-xcr1.sje.cw.net)  205,010ms  204,584ms  206,391ms 
+ 11   195.2.14.206 (linode-gw-xcr1.sje.cw.net)  202,750ms  306,880ms  204,711ms 
+ 12   173.230.159.85 (if-2-4.csw5-fnc1.linode.com)  204,581ms  272,324ms  204,784ms 
+ 13   *  45.33.39.39 (iperf.scottlinux.com)  274,237ms !X  203,100ms !X 
+traceroute to iperf.eenet.ee (193.40.55.7), 20 hops max
+  1   192.168.42.1 (_gateway)  0,977ms  0,960ms  0,970ms 
+  2   192.168.1.1 (192.168.1.1)  1,591ms  1,480ms  1,554ms 
+  3   136.22.97.33 (136.22.97.33)  40,540ms  38,381ms  40,152ms 
+  4   136.22.254.44 (136.22.254.44)  39,850ms  41,673ms  39,155ms 
+  5   108.170.251.209 (108.170.251.209)  41,567ms  40,208ms  39,371ms 
+  6   142.250.234.79 (142.250.234.79)  39,837ms  39,040ms  43,248ms 
+  7   *  *  * 
+  8   209.85.251.72 (209.85.251.72)  44,467ms  41,617ms  42,450ms 
+  9   62.40.125.201 (google.mx1.fra.de.geant.net)  43,090ms  45,245ms  42,962ms 
  10   *  *  * 
- 11   *  *  * 
+ 11   62.115.138.22 (ffm-bb2-link.ip.twelve99.net)  154,406ms  74,806ms  87,179ms 
  12   *  *  * 
  13   *  *  * 
  14   *  *  * 
- 15   *  *  * 
- 16   *  *  * 
- 17   *  *  * 
- 18   *  *  * 
- 19   *  *  * 
- 20   *  *  * 
+ 15   *  62.115.151.17 (teliacarrier.gw.eenet.ee)  147,423ms !X  * 
 traceroute to speedtest.uztelecom.uz (195.158.0.242), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  1,231ms  1,305ms  1,244ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  77,993ms  45,804ms  2,420ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  5,757ms  1,488ms  1,441ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  1,559ms  1,512ms  1,682ms 
-  5   10.28.17.154 (10.28.17.154)  2,532ms  2,488ms  3,358ms 
-  6   194.53.172.71 (retn.bnix.net)  2,869ms  3,653ms  2,891ms 
-  7   87.245.233.211 (ae0-8.RT.INT.STV.RU.retn.net)  57,357ms  68,528ms  58,704ms 
-  8   87.245.238.37 (GW-Intal.retn.net)  100,662ms  92,737ms  92,695ms 
-  9   195.69.189.52 (195.69.189.52)  89,297ms  88,618ms  88,189ms 
- 10   195.69.191.48 (195.69.191.48)  87,349ms  87,242ms  87,236ms 
- 11   195.69.189.251 (195.69.189.251)  154,870ms  109,100ms  204,609ms 
- 12   195.69.189.253 (195.69.189.253)  88,478ms  87,950ms  89,555ms 
- 13   84.54.64.6 (84.54.64.6)  89,504ms  88,795ms  88,048ms 
- 14   84.54.64.213 (84.54.64.213)  89,002ms  88,409ms  88,083ms 
- 15   *  *  * 
- 16   *  *  * 
- 17   *  *  * 
- 18   *  *  * 
- 19   *  *  * 
- 20   *  *  * 
-traceroute to lille.testdebit.info (89.84.1.234), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  42,173ms  13,796ms  45,109ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  1,927ms  1,614ms  1,446ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  1,519ms  1,481ms  1,439ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  2,008ms  2,980ms  1,743ms 
-  5   10.28.87.213 (10.28.87.213)  2,525ms  2,473ms  2,571ms 
+  1   192.168.42.1 (_gateway)  2,579ms  0,999ms  1,269ms 
+  2   192.168.1.1 (192.168.1.1)  1,393ms  1,372ms  1,318ms 
+  3   136.22.97.33 (136.22.97.33)  34,752ms  40,819ms  42,156ms 
+  4   142.250.160.202 (142.250.160.202)  42,787ms  47,374ms  37,911ms 
+  5   108.170.251.144 (108.170.251.144)  42,831ms  38,091ms  41,634ms 
   6   *  *  * 
-  7   154.25.12.245 (be2525.rcr21.bru01.atlas.cogentco.com)  5,782ms  5,617ms  6,208ms 
-  8   130.117.48.233 (be3674.ccr41.par01.atlas.cogentco.com)  11,905ms  8,604ms  8,529ms 
-  9   130.117.0.166 (be3625.rcr21.par05.atlas.cogentco.com)  9,301ms  11,100ms  9,234ms 
- 10   149.14.121.234 (bouyguestelecom.demarc.cogentco.com)  8,652ms  *  * 
- 11   62.34.2.57 (62.34.2.57)  14,510ms  12,987ms  13,326ms 
- 12   *  212.194.171.71 (la28.bsr01-lil.net.bbox.fr)  14,117ms  14,347ms 
- 13   89.89.100.97 (la2.rpt02-th2.net.bbox.fr)  15,133ms  12,736ms  13,553ms 
+  7   *  *  * 
+  8   209.85.240.165 (209.85.240.165)  46,720ms  40,077ms  39,167ms 
+  9   195.158.0.242 (ta234-p86.uzpak.uz)  173,206ms  203,595ms  204,989ms 
+traceroute to lille.testdebit.info (89.84.1.234), 20 hops max
+  1   192.168.42.1 (_gateway)  1,162ms  0,977ms  0,747ms 
+  2   192.168.1.1 (192.168.1.1)  1,321ms  1,317ms  1,331ms 
+  3   136.22.97.33 (136.22.97.33)  39,134ms  38,426ms  39,919ms 
+  4   136.22.254.44 (136.22.254.44)  39,890ms  38,438ms  39,516ms 
+  5   195.89.98.65 (ae46-0-xcr1.fix.cw.net)  48,725ms  38,465ms  40,189ms 
+  6   195.2.27.229 (ae4-pcr1.fis.cw.net)  56,273ms  38,527ms  40,277ms 
+  7   130.117.14.73 (be3001.agr41.fra03.atlas.cogentco.com)  39,705ms  39,158ms  41,195ms 
+  8   130.117.1.118 (be3187.ccr42.fra03.atlas.cogentco.com)  46,728ms  39,711ms  40,010ms 
+  9   130.117.1.46 (be3626.rcr21.par05.atlas.cogentco.com)  56,011ms  56,714ms  54,884ms 
+ 10   149.14.121.234 (bouyguestelecom.demarc.cogentco.com)  47,540ms  47,350ms  47,926ms 
+ 11   62.34.2.57 (62.34.2.57)  55,981ms  62,365ms  63,455ms 
+ 12   62.34.2.57 (62.34.2.57)  55,986ms  61,977ms  55,566ms 
+ 13   89.89.100.97 (la2.rpt02-th2.net.bbox.fr)  56,265ms  55,576ms  56,328ms 
  14   *  *  * 
- 15   *  *  * 
- 16   *  *  * 
- 17   *  *  * 
- 18   *  *  * 
- 19   *  *  * 
- 20   *  *  * 
+ 15   89.84.1.234 (89.84.1.234)  58,563ms  131,969ms  45,024ms 
 traceroute to speedtest.serverius.net (178.21.16.76), 20 hops max
-  1   130.104.151.254 (CtStevin.sri.ucl.ac.be)  4,618ms  4,351ms  3,359ms 
-  2   130.104.254.229 (CtPythagore.sri.ucl.ac.be)  2,464ms  5,065ms  3,923ms 
-  3   10.255.217.2 (OsPythagore.sri.ucl.ac.be)  3,452ms  1,851ms  1,701ms 
-  4   193.191.3.85 (r1.lln.belnet.net)  4,236ms  5,067ms  6,439ms 
-  5   10.28.17.154 (10.28.17.154)  4,971ms  3,470ms  4,703ms 
-  6   194.53.172.71 (retn.bnix.net)  3,153ms  3,836ms  3,195ms 
-  7   87.245.232.44 (ae0-3.RT.SRV.DRO.NL.retn.net)  11,195ms  8,563ms  7,066ms 
-  8   87.245.246.51 (GW-Serverius.retn.net)  9,126ms  10,584ms  8,089ms 
-  9   185.8.179.33 (185.8.179.33)  10,066ms  20,347ms  14,036ms 
- 10   *  *  * 
- 11   *  *  * 
- 12   *  *  * 
+  1   192.168.42.1 (_gateway)  0,886ms  1,366ms  0,853ms 
+  2   192.168.1.1 (192.168.1.1)  1,921ms  1,871ms  1,891ms 
+  3   136.22.97.33 (136.22.97.33)  133,870ms  24,259ms  120,681ms 
+  4   136.22.254.44 (136.22.254.44)  23,089ms  25,624ms  23,970ms 
+  5   195.89.98.65 (ae46-0-xcr1.fix.cw.net)  44,875ms  22,520ms  57,118ms 
+  6   64.125.13.101 (ae14.mpr1.fra4.de.zip.zayo.com)  26,682ms  23,310ms  23,723ms 
+  7   64.125.26.172 (ae12.cs1.fra6.de.eth.zayo.com)  134,604ms  33,283ms  35,278ms 
+  8   *  *  * 
+  9   64.125.29.79 (ae1.mcs1.ams17.nl.eth.zayo.com)  68,481ms  30,231ms  31,768ms 
+ 10   64.125.29.68 (ae0.mcs1.ams10.nl.eth.zayo.com)  32,189ms  31,137ms  31,836ms 
+ 11   79.141.46.100 (79.141.46.100.available.above.net)  44,254ms  39,262ms  44,092ms 
+ 12   185.8.179.33 (185.8.179.33)  31,745ms  37,830ms  43,837ms 
  13   *  *  * 
  14   *  *  * 
  15   *  *  * 
