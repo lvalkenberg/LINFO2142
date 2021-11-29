@@ -88,21 +88,24 @@ def process(input, output_writer):
                         l.append("-1")
                 
                 except:
-                    try: 
-                        float(line[4])
-                        l.append(line[4])
-                        l.append("-1")
-                        l.append("-1")
+                    for number in line[1:]:
+
+                        try:
+                            float(number)
+                            l.append(number)
+                        
+                        except:
+                            continue
                 
-                    except:
-                        values.append(("-1", "-1", "-1"))  #Demande trop de travail pour pas grand chose => -1 = erreur
+                    while len(l) != 3:
+                        l.append("-1")  #Demande trop de travail pour pas grand chose => -1 = erreur
 
             
-                values.append((l[0], l[1], l[2]))
-
                 if (len(l) != 3):
                     print(l)
                     return
+                
+                values.append((l[0], l[1], l[2]))
         
         index +=1
     

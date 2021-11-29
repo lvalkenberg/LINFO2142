@@ -258,6 +258,7 @@ traceroute to lille.testdebit.info (89.84.1.234), 30 hops max, 60 byte packets
  4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  35.560 ms  38.575 ms  37.878 ms
  5  * * *
  6  * be3675.ccr42.par01.atlas.cogentco.com (154.54.57.165)  18.880 ms  113.177 ms
+ 65 fake.intermediare.router (XXX.XXX.XXXX.XXXX) 14 ms * *
  7  be3625.rcr21.par05.atlas.cogentco.com (130.117.0.166)  132.058 ms  115.394 ms  130.762 ms
  8  bouyguestelecom.demarc.cogentco.com (149.14.121.234)  113.890 ms  114.402 ms  117.474 ms
  9  62.34.2.57 (62.34.2.57)  123.657 ms  122.805 ms  121.906 ms
@@ -269,6 +270,9 @@ traceroute to speedtest.serverius.net (178.21.16.76), 30 hops max, 60 byte packe
  1  192.168.0.1 (192.168.0.1)  2.127 ms  3.595 ms  5.966 ms
  2  10.161.3.65 (10.161.3.65)  15.856 ms  19.435 ms  18.744 ms
  3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  19.851 ms  23.362 ms  23.848 ms
+ 4  fake.intermediare.router (XXX.XXX.XXXX.XXXX) * * 510 ms
+ 5  fake.intermediare.router (XXX.XXX.XXXX.XXXX) * 15 ms *
+ 4  fake.intermediare.router (XXX.XXX.XXXX.XXXX) 14 ms * *
  4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  24.660 ms  25.134 ms  25.657 ms
  5  serverius.serverius.nl-ix.net (193.239.116.25)  33.599 ms  32.107 ms  31.417 ms
  6  * * *

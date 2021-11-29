@@ -68,8 +68,8 @@ def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_an
 
         for serv in serv2path.keys():
 
-            output.write("="*50+"\n")
-            output.write("Pour le serveur {0}, il y a {1}  chemins différents :\n".format(serv, len(serv2path[serv].keys())))
+            output.write("="*250+"\n")
+            output.write("Pour le serveur {0}, il y a {1} chemins différents :\n".format(serv, len(serv2path[serv].keys())))
 
             for path in serv2path[serv].keys():
                 
