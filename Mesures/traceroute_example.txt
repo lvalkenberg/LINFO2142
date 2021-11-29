@@ -1,0 +1,200 @@
+2021-11-29 10:50:53
+traceroute to iperf.biznetnetworks.com (117.102.109.186), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.093 ms  3.198 ms  3.222 ms
+ 2  10.161.3.65 (10.161.3.65)  8.094 ms  12.882 ms  13.086 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  13.273 ms  13.579 ms  13.330 ms
+ 4  mx-lvl3-2-ae8-0.voo.be (212.68.211.169)  17.112 ms  17.271 ms  17.286 ms
+ 5  he.belgiumix.net (185.1.127.23)  17.314 ms * *
+ 6  100ge5-1.core1.par2.he.net (184.104.193.137)  42.180 ms  23.472 ms  32.224 ms
+ 7  port-channel4.core2.mrs1.he.net (184.105.81.30)  37.797 ms  38.110 ms  37.895 ms
+ 8  100ge14-2.core1.sin1.he.net (184.105.65.13)  175.142 ms  178.731 ms  175.392 ms
+ 9  biznet-networks-singapore-pte.e0-11.switch1.sin1.he.net (74.82.50.70)  175.034 ms  175.085 ms biznet-networks.gigabitethernet2-6.core1.sin1.he.net (27.50.33.110)  178.243 ms
+10  * * 182.253.255.2 (182.253.255.2)  187.529 ms
+11  117.102.109.186 (117.102.109.186)  181.402 ms !X 182.253.100.234 (182.253.100.234)  181.433 ms 182.253.187.13 (182.253.187.13)  193.065 ms
+traceroute to iperf.scottlinux.com (45.33.39.39), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.151 ms  4.142 ms  4.605 ms
+ 2  10.161.3.65 (10.161.3.65)  14.105 ms  17.914 ms  18.402 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  19.681 ms  18.812 ms  19.934 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  21.056 ms  21.617 ms  20.207 ms
+ 5  be4159.rcr21.bru01.atlas.cogentco.com (149.6.135.65)  25.983 ms cogent-ic151338-brx-b4.ip.twelve99-cust.net (213.248.85.106)  24.534 ms  25.067 ms
+ 6  adm-bb4-link.ip.twelve99.net (62.115.116.230)  172.183 ms  158.755 ms  159.475 ms
+ 7  ldn-bb4-link.ip.twelve99.net (62.115.113.239)  25.318 ms be12488.ccr42.lon13.atlas.cogentco.com (130.117.51.41)  116.105 ms ldn-bb4-link.ip.twelve99.net (62.115.113.239)  24.315 ms
+ 8  nyk-bb1-link.ip.twelve99.net (62.115.112.244)  94.598 ms  93.655 ms be3043.ccr22.ymq01.atlas.cogentco.com (154.54.44.166)  119.976 ms
+ 9  sjo-b23-link.ip.twelve99.net (62.115.118.111)  166.263 ms  166.831 ms  167.372 ms
+10  linode-ic342731-sjo-b21.ip.twelve99-cust.net (62.115.172.133)  165.298 ms be2718.ccr42.ord01.atlas.cogentco.com (154.54.7.129)  124.880 ms linode-ic342731-sjo-b21.ip.twelve99-cust.net (62.115.172.133)  170.471 ms
+11  be2832.ccr22.mci01.atlas.cogentco.com (154.54.44.169)  134.560 ms be2831.ccr21.mci01.atlas.cogentco.com (154.54.42.165)  128.234 ms  128.211 ms
+12  be2832.ccr22.mci01.atlas.cogentco.com (154.54.44.169)  133.807 ms be2831.ccr21.mci01.atlas.cogentco.com (154.54.42.165)  130.661 ms iperf.scottlinux.com (45.33.39.39)  160.693 ms !X
+traceroute to iperf.eenet.ee (193.40.55.7), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  10.769 ms  11.208 ms  13.043 ms
+ 2  10.161.3.65 (10.161.3.65)  13.640 ms  15.612 ms  16.095 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  16.601 ms  17.175 ms  20.751 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  21.560 ms  21.767 ms  23.860 ms
+ 5  cogent-ic151338-brx-b4.ip.twelve99-cust.net (213.248.85.106)  52.814 ms  56.175 ms  60.321 ms
+ 6  * adm-bb4-link.ip.twelve99.net (62.115.116.230)  37.786 ms  47.859 ms
+ 7  s-bb2-link.ip.twelve99.net (62.115.114.249)  46.993 ms  46.086 ms  45.234 ms
+ 8  * tln-b3-link.ip.twelve99.net (62.115.134.239)  49.742 ms  50.831 ms
+ 9  teliacarrier.gw.eenet.ee (62.115.151.17)  50.969 ms !X * *
+traceroute to speedtest.uztelecom.uz (195.158.0.242), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  1.958 ms  7.758 ms  8.218 ms
+ 2  10.161.3.65 (10.161.3.65)  10.708 ms  14.744 ms *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * 100ge4-2.core1.lux1.he.net (184.104.194.109)  20.038 ms
+ 7  100ge0-34.core2.fra1.he.net (184.104.194.105)  46.780 ms  48.039 ms  47.126 ms
+ 8  100ge4-2.core1.fra1.he.net (184.104.195.13)  26.183 ms  25.451 ms  26.513 ms
+ 9  100ge14-1.core1.prg1.he.net (184.105.213.234)  40.926 ms  40.570 ms  40.826 ms
+10  ve952.core2.kbp1.he.net (184.104.192.166)  57.058 ms  56.286 ms  60.420 ms
+11  az-international-llc.100gigabitethernet5-2.core1.kbp1.he.net (216.66.94.250)  110.345 ms  110.550 ms  110.641 ms
+12  195.69.189.52 (195.69.189.52)  94.555 ms 195.69.189.44 (195.69.189.44)  99.620 ms  98.628 ms
+13  195.69.189.38 (195.69.189.38)  98.991 ms  98.777 ms 195.69.189.32 (195.69.189.32)  102.598 ms
+14  195.69.189.255 (195.69.189.255)  101.680 ms 195.69.189.249 (195.69.189.249)  102.968 ms 195.69.189.255 (195.69.189.255)  95.401 ms
+15  84.54.64.6 (84.54.64.6)  98.500 ms  99.023 ms 84.54.64.206 (84.54.64.206)  114.288 ms
+16  84.54.64.182 (84.54.64.182)  103.536 ms 84.54.64.213 (84.54.64.213)  101.123 ms 84.54.64.182 (84.54.64.182)  102.563 ms
+17  84.54.64.130 (84.54.64.130)  118.590 ms ta234-p86.uzpak.uz (195.158.0.242)  107.344 ms  107.902 ms
+traceroute to lille.testdebit.info (89.84.1.234), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  4.111 ms  15.745 ms  15.771 ms
+ 2  10.161.3.65 (10.161.3.65)  19.068 ms  28.866 ms  29.343 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  33.061 ms  33.358 ms  34.825 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  35.560 ms  38.575 ms  37.878 ms
+ 5  * * *
+ 6  * be3675.ccr42.par01.atlas.cogentco.com (154.54.57.165)  18.880 ms  113.177 ms
+ 7  be3625.rcr21.par05.atlas.cogentco.com (130.117.0.166)  132.058 ms  115.394 ms  130.762 ms
+ 8  bouyguestelecom.demarc.cogentco.com (149.14.121.234)  113.890 ms  114.402 ms  117.474 ms
+ 9  62.34.2.57 (62.34.2.57)  123.657 ms  122.805 ms  121.906 ms
+10  la28.bsr01-lil.net.bbox.fr (212.194.171.71)  121.052 ms  127.649 ms  134.658 ms
+11  la2.rpt02-th2.net.bbox.fr (89.89.100.97)  135.843 ms  135.155 ms  23.439 ms
+12  * * *
+13  89.84.1.234 (89.84.1.234)  30.785 ms  31.318 ms  35.215 ms
+traceroute to speedtest.serverius.net (178.21.16.76), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.127 ms  3.595 ms  5.966 ms
+ 2  10.161.3.65 (10.161.3.65)  15.856 ms  19.435 ms  18.744 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  19.851 ms  23.362 ms  23.848 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  24.660 ms  25.134 ms  25.657 ms
+ 5  serverius.serverius.nl-ix.net (193.239.116.25)  33.599 ms  32.107 ms  31.417 ms
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+2021-11-29 10:51:53
+traceroute to iperf.biznetnetworks.com (117.102.109.186), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.093 ms  3.198 ms  3.222 ms
+ 2  10.161.3.65 (10.161.3.65)  8.094 ms  12.882 ms  13.086 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  13.273 ms  13.579 ms  13.330 ms
+ 4  mx-lvl3-2-ae8-0.voo.be (212.68.211.169)  17.112 ms  17.271 ms  17.286 ms
+ 5  he.belgiumix.net (185.1.127.23)  17.314 ms * *
+ 6  100ge5-1.core1.par2.he.net (184.104.193.137)  42.180 ms  23.472 ms  32.224 ms
+ 7  port-channel4.core2.mrs1.he.net (184.105.81.30)  37.797 ms  38.110 ms  37.895 ms
+ 8  100ge14-2.core1.sin1.he.net (184.105.65.13)  175.142 ms  178.731 ms  175.392 ms
+ 9  biznet-networks-singapore-pte.e0-11.switch1.sin1.he.net (74.82.50.70)  175.034 ms  175.085 ms biznet-networks.gigabitethernet2-6.core1.sin1.he.net (27.50.33.110)  178.243 ms
+10  * * 182.253.255.2 (182.253.255.2)  187.529 ms
+11  117.102.109.186 (117.102.109.186)  181.402 ms !X 182.253.100.234 (182.253.100.234)  181.433 ms 182.253.187.13 (182.253.187.13)  193.065 ms
+traceroute to iperf.scottlinux.com (45.33.39.39), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.151 ms  4.142 ms  4.605 ms
+ 2  10.161.3.65 (10.161.3.65)  14.105 ms  17.914 ms  18.402 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  19.681 ms  18.812 ms  19.934 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  21.056 ms  21.617 ms  20.207 ms
+ 5  be4159.rcr21.bru01.atlas.cogentco.com (149.6.135.65)  25.983 ms cogent-ic151338-brx-b4.ip.twelve99-cust.net (213.248.85.106)  24.534 ms  25.067 ms
+ 6  adm-bb4-link.ip.twelve99.net (62.115.116.230)  172.183 ms  158.755 ms  159.475 ms
+ 7  ldn-bb4-link.ip.twelve99.net (62.115.113.239)  25.318 ms be12488.ccr42.lon13.atlas.cogentco.com (130.117.51.41)  116.105 ms ldn-bb4-link.ip.twelve99.net (62.115.113.239)  24.315 ms
+ 8  nyk-bb1-link.ip.twelve99.net (62.115.112.244)  94.598 ms  93.655 ms be3043.ccr22.ymq01.atlas.cogentco.com (154.54.44.166)  119.976 ms
+ 9  sjo-b23-link.ip.twelve99.net (62.115.118.111)  166.263 ms  166.831 ms  167.372 ms
+10  linode-ic342731-sjo-b21.ip.twelve99-cust.net (62.115.172.133)  165.298 ms be2718.ccr42.ord01.atlas.cogentco.com (154.54.7.129)  124.880 ms linode-ic342731-sjo-b21.ip.twelve99-cust.net (62.115.172.133)  170.471 ms
+11  be2832.ccr22.mci01.atlas.cogentco.com (154.54.44.169)  134.560 ms be2831.ccr21.mci01.atlas.cogentco.com (154.54.42.165)  128.234 ms  128.211 ms
+12  be2832.ccr22.mci01.atlas.cogentco.com (154.54.44.169)  133.807 ms be2831.ccr21.mci01.atlas.cogentco.com (154.54.42.165)  130.661 ms iperf.scottlinux.com (45.33.39.39)  160.693 ms !X
+traceroute to iperf.eenet.ee (193.40.55.7), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  10.769 ms  11.208 ms  13.043 ms
+ 2  10.161.3.65 (10.161.3.65)  13.640 ms  15.612 ms  16.095 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  16.601 ms  17.175 ms  20.751 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  21.560 ms  21.767 ms  23.860 ms
+ 5  cogent-ic151338-brx-b4.ip.twelve99-cust.net (213.248.85.106)  52.814 ms  56.175 ms  60.321 ms
+ 6  * adm-bb4-link.ip.twelve99.net (62.115.116.230)  37.786 ms  47.859 ms
+ 7  s-bb2-link.ip.twelve99.net (62.115.114.249)  46.993 ms  46.086 ms  45.234 ms
+ 8  * tln-b3-link.ip.twelve99.net (62.115.134.239)  49.742 ms  50.831 ms
+ 9  teliacarrier.gw.eenet.ee (62.115.151.17)  50.969 ms !X * *
+traceroute to speedtest.uztelecom.uz (195.158.0.242), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  1.958 ms  7.758 ms  8.218 ms
+ 2  10.161.3.65 (10.161.3.65)  10.708 ms  14.744 ms *
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * 100ge4-2.core1.lux1.he.net (184.104.194.109)  20.038 ms
+ 7  100ge0-34.core2.fra1.he.net (184.104.194.105)  46.780 ms  48.039 ms  47.126 ms
+ 8  100ge4-2.core1.fra1.he.net (184.104.195.13)  26.183 ms  25.451 ms  26.513 ms
+ 9  100ge14-1.core1.prg1.he.net (184.105.213.234)  40.926 ms  40.570 ms  40.826 ms
+10  ve952.core2.kbp1.he.net (184.104.192.166)  57.058 ms  56.286 ms  60.420 ms
+11  az-international-llc.100gigabitethernet5-2.core1.kbp1.he.net (216.66.94.250)  110.345 ms  110.550 ms  110.641 ms
+12  195.69.189.52 (195.69.189.52)  94.555 ms 195.69.189.44 (195.69.189.44)  99.620 ms  98.628 ms
+13  195.69.189.38 (195.69.189.38)  98.991 ms  98.777 ms 195.69.189.32 (195.69.189.32)  102.598 ms
+14  195.69.189.255 (195.69.189.255)  101.680 ms 195.69.189.249 (195.69.189.249)  102.968 ms 195.69.189.255 (195.69.189.255)  95.401 ms
+15  84.54.64.6 (84.54.64.6)  98.500 ms  99.023 ms 84.54.64.206 (84.54.64.206)  114.288 ms
+16  84.54.64.182 (84.54.64.182)  103.536 ms 84.54.64.213 (84.54.64.213)  101.123 ms 84.54.64.182 (84.54.64.182)  102.563 ms
+17  84.54.64.130 (84.54.64.130)  118.590 ms ta234-p86.uzpak.uz (195.158.0.242)  107.344 ms  107.902 ms
+traceroute to lille.testdebit.info (89.84.1.234), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  4.111 ms  15.745 ms  15.771 ms
+ 2  10.161.3.65 (10.161.3.65)  19.068 ms  28.866 ms  29.343 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  33.061 ms  33.358 ms  34.825 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  35.560 ms  38.575 ms  37.878 ms
+ 5  * * *
+ 6  * be3675.ccr42.par01.atlas.cogentco.com (154.54.57.165)  18.880 ms  113.177 ms
+ 7  be3625.rcr21.par05.atlas.cogentco.com (130.117.0.166)  132.058 ms  115.394 ms  130.762 ms
+ 8  bouyguestelecom.demarc.cogentco.com (149.14.121.234)  113.890 ms  114.402 ms  117.474 ms
+ 9  62.34.2.57 (62.34.2.57)  123.657 ms  122.805 ms  121.906 ms
+10  la28.bsr01-lil.net.bbox.fr (212.194.171.71)  121.052 ms  127.649 ms  134.658 ms
+11  la2.rpt02-th2.net.bbox.fr (89.89.100.97)  135.843 ms  135.155 ms  23.439 ms
+12  * * *
+13  89.84.1.234 (89.84.1.234)  30.785 ms  31.318 ms  35.215 ms
+traceroute to speedtest.serverius.net (178.21.16.76), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  2.127 ms  3.595 ms  5.966 ms
+ 2  10.161.3.65 (10.161.3.65)  15.856 ms  19.435 ms  18.744 ms
+ 3  mx-bxl2-1-ae73-301.voo.be (109.88.204.137)  19.851 ms  23.362 ms  23.848 ms
+ 4  mx-bxl2-2-ae0-0.voo.be (212.68.211.141)  24.660 ms  25.134 ms  25.657 ms
+ 5  serverius.serverius.nl-ix.net (193.239.116.25)  33.599 ms  32.107 ms  31.417 ms
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+

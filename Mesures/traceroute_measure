@@ -9,7 +9,7 @@ declare -a Servers=("iperf.biznetnetworks.com" "iperf.scottlinux.com" "iperf.een
 currentdate=`date +"%Y-%m-%d %T"`
 
 
-echo "${currentdate}" >> "${temporary_file}"
+echo "${currentdate}" #>> "${temporary_file}"
 
 # Iterate the string array using for loop
 for server in ${Servers[@]}; do

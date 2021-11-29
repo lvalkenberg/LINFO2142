@@ -46,9 +46,10 @@ def traceroute_analyse(file="../Mesures/traceroute_measure.csv"):
 
     trace_csv = pd.read_csv(file)
     
+    date = trace_csv["Date"]
     serveurs =trace_csv["Serveur"]
     traceroute = trace_csv["Traceroute"]
-    date = trace_csv["Date"]
+    
 
     for serv in serveurs:
         if serv not in dic:
