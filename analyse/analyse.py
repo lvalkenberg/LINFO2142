@@ -90,7 +90,7 @@ def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_an
 
 
         # DIFFERENT PATH IN FUNCTION OF THE DATE
-        output.write("="*250+"\n")
+        output.write("="*250+"\n\n")
         output.write("DIFFERENT PATH IN FUNCTION OF THE DATE\n")
         for serv in serv2path_date.keys():
 
@@ -101,9 +101,9 @@ def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_an
                 
                 output.write("{0} with {1} occurences.\n".format(path, len(serv2path_date[serv][path])))
         
-
+        print("\n")
         # DIFFERENT PATH IN FUNCTION OF THE HOUR
-        output.write("="*250+"\n")
+        output.write("="*250+"\n\n")
         output.write("DIFFERENT PATH IN FUNCTION OF THE HOUR\n")
         for serv in serv2path_hour.keys():
 
