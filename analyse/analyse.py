@@ -39,7 +39,8 @@ def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_an
 
     with open(outputfile, "a") as output:
 
-        serv2path = {}  #<Serveurs, <path, [date]>>
+        serv2path_date = {}  #<Serveurs, <path, [date]>>
+        serv2path_hour = {}  #<Serveurs, <path, [hour]>>     => To find pattern in the path according to the hours
         
         trace_csv = pd.read_csv(file)
         
@@ -47,33 +48,71 @@ def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_an
         serveurs =trace_csv["Serveur"]
         traceroute = trace_csv["Traceroute"]
 
+
+        # ACCORDING TO THE DATE
         for i in range(len(date)):
             
             d = date[i]
             serv = serveurs[i]
             path = traceroute[i]
 
-            if serv in serv2path:
+            if serv in serv2path_date:
 
-                if path in serv2path[serv]:
-                    serv2path[serv][path].append(d)
+                if path in serv2path_date[serv]:
+                    serv2path_date[serv][path].append(d)
                 else:
-                    serv2path[serv][path] = [d]
+                    serv2path_date[serv][path] = [d]
 
             else:
 
-                serv2path[serv] = {}
-                serv2path[serv][path] = [d]
+                serv2path_date[serv] = {}
+                serv2path_date[serv][path] = [d]
         
+        # ACCORDING TO THE HOUR
+        for i in range(len(date)):
+            
+            d = date[i]
+            hour = d.split()[1].split(":")[0]
+            serv = serveurs[i]
+            path = traceroute[i]
 
-        for serv in serv2path.keys():
+            if serv in serv2path_hour:
+
+                if path in serv2path_hour[serv]:
+                    serv2path_hour[serv][path].append(hour)
+                else:
+                    serv2path_hour[serv][path] = [hour]
+
+            else:
+
+                serv2path_hour[serv] = {}
+                serv2path_hour[serv][path] = [hour]
+
+
+        # DIFFERENT PATH IN FUNCTION OF THE DATE
+        output.write("="*250+"\n")
+        output.write("DIFFERENT PATH IN FUNCTION OF THE DATE\n")
+        for serv in serv2path_date.keys():
 
             output.write("="*250+"\n")
-            output.write("Pour le serveur {0}, il y a {1} chemins différents :\n".format(serv, len(serv2path[serv].keys())))
+            output.write("Pour le serveur {0}, il y a {1} chemins différents :\n".format(serv, len(serv2path_date[serv].keys())))
 
-            for path in serv2path[serv].keys():
+            for path in serv2path_date[serv].keys():
                 
-                output.write("{0} with {1} occurences.\n".format(path, len(serv2path[serv][path])))
+                output.write("{0} with {1} occurences.\n".format(path, len(serv2path_date[serv][path])))
+        
+
+        # DIFFERENT PATH IN FUNCTION OF THE HOUR
+        output.write("="*250+"\n")
+        output.write("DIFFERENT PATH IN FUNCTION OF THE HOUR\n")
+        for serv in serv2path_hour.keys():
+
+            output.write("="*250+"\n")
+            output.write("Pour le serveur {0}, il y a {1} chemins différents :\n".format(serv, len(serv2path_hour[serv].keys())))
+
+            for path in serv2path_hour[serv].keys():
+                
+                output.write("{0} with {1} occurences.\n".format(path, len(serv2path_hour[serv][path])))
         
 
 traceroute_analyse()
