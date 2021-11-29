@@ -33,7 +33,7 @@ def process(input, output_writer):
                 if index != 0:          #Pour éviter d'écrire le 1e traceroute sans son chemin
                     output_writer.writerow([date[0:-1], serveur, path, values])
                 
-                serveur = line[2] + " " + line[3]
+                serveur = line[2] + " " + line[3][0:-1]
                 path = []
                 values = []
 
