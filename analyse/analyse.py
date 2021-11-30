@@ -34,13 +34,39 @@ def fusion_with_weather(csv1, csv2):
     return fusion
 
 
-def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="traceroute_analyse.txt"):  
+def process_path(path, serveur):
+
+    answer = ""
+    ip = serveur.split()[1][1:-1]
+
+    if path[len(path)-1 -len(ip) -2: -3]!= ip:
+
+        return answer
+
+    for hop in path.split(","):
+        if '*' not in hop:
+            answer += hop
+            answer += ","  #We add the "," back
+    
+    return answer[0:-1] #To delete the last ","
+
+
+
+def traceroute_analyse(file="../data2/better_measure_traceroute.csv", outputfile="traceroute_analyse.txt"):  
+    """
+    1. We process the path :
+        - We take only the paths who reach the server
+        - We delete the ("*", "*") in the path
+    """
 
     with open(outputfile, "a") as output:
 
+        total_discarded_path = 0
+
         serv2path_date = {}  #<Serveurs, <path, [date]>>
         serv2path_hour = {}  #<Serveurs, <path, [hour]>>     => To find pattern in the path according to the hours
-        
+        serv2length = {}     #<Serveurs, <, [path]
+
         trace_csv = pd.read_csv(file)
         
         date = trace_csv["Date"]
@@ -50,11 +76,15 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
         # ACCORDING TO THE DATE
         for i in range(len(date)):
-            
+
             d = date[i]
             serv = serveurs[i]
-            path = traceroute[i]
+            path = process_path(traceroute[i], serv)
 
+            if path == "":
+                total_discarded_path += 1
+                continue
+            
             if serv in serv2path_date:
 
                 if path in serv2path_date[serv]:
@@ -66,6 +96,8 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
                 serv2path_date[serv] = {}
                 serv2path_date[serv][path] = [d]
+        
+        print("Total number of discarded path : {0}".format(total_discarded_path))
         
         # ACCORDING TO THE HOUR
         for i in range(len(date)):

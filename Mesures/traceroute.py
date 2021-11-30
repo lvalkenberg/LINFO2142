@@ -34,6 +34,7 @@ def process(input, output_writer):
                     output_writer.writerow([date[0:-1], serveur, path, values])
                 
                 serveur = line[2] + " " + line[3][0:-1]
+                ip_serv = line[3][1:-2]
                 path = []
                 values = []
 
@@ -51,7 +52,10 @@ def process(input, output_writer):
 
             else:
                 
-                path.append((line[2][1:-1], line[1])) #(IP, Hostname) with IP without '(' & ')'
+                if ip_serv in line:
+                    path.append((ip_serv, ip_serv))
+                else:
+                    path.append((line[2][1:-1], line[1])) #(IP, Hostname) with IP without '(' & ')'
                 
                 #Different possible cases :
                 # 1. "*", "*", mesures1, "ms"
