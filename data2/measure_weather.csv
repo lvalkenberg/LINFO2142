@@ -1,0 +1,94 @@
+Date,Condition,T,Pluie,Pression,Humidity,Cloud Cover,Cloud Ceiling
+2021-11-26 19:45:04.622488,/staticfiles/images/picto/v2/bc/night/cover.png,3.8°C,,986 hPa,95%,100%,300 m
+2021-11-26 20:45:04.126645,/staticfiles/images/picto/v2/bc/night/lightrain.png,4.3°C,0.3 mm,986 hPa,95%,92%,300 m
+2021-11-26 21:45:04.544940,/staticfiles/images/picto/v2/bc/night/lightrain.png,4.5°C,0.2 mm,985 hPa,94%,100%,600 m
+2021-11-26 22:45:04.284968,/staticfiles/images/picto/v2/bc/night/lightrain.png,3.9°C,0.4 mm,985 hPa,93%,98%,500 m
+2021-11-26 23:45:04.435852,/staticfiles/images/picto/v2/bc/night/rain.png,2.7°C,3.0 mm,985 hPa,89%,91%,500 m
+2021-11-27 00:45:03.889265,/staticfiles/images/picto/v2/bc/night/rain.png,3.7°C,1.6 mm,985 hPa,95%,91%,500 m
+2021-11-27 01:45:03.799206,/staticfiles/images/picto/v2/bc/night/cover.png,3.8°C,,985 hPa,100%,92%,500 m
+2021-11-27 02:45:05.771116,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.8°C,,985 hPa,100%,100%,9900 m
+2021-11-27 03:45:04.645434,/staticfiles/images/picto/v2/bc/night/cloudy.png,0.6°C,,985 hPa,99%,88%,9100 m
+2021-11-27 04:45:04.283306,/staticfiles/images/picto/v2/bc/night/cloudy.png,0.0°C,,986 hPa,95%,49%,10400 m
+2021-11-27 05:45:05.387356,/staticfiles/images/picto/v2/bc/night/cloudy.png,-0.4°C,,986 hPa,93%,53%,1400 m
+2021-11-27 06:45:04.204973,/staticfiles/images/picto/v2/bc/night/cloudy.png,-0.5°C,,986 hPa,91%,40%,9100 m
+2021-11-27 07:45:04.078995,/staticfiles/images/picto/v2/bc/night/lightcloudy.png,-0.7°C,,987 hPa,90%,38%,9100 m
+2021-11-27 08:45:04.341378,/staticfiles/images/picto/v2/bc/day/lightcloudy.png,0.0°C,,988 hPa,93%,37%,9100 m
+2021-11-27 09:45:04.244285,/staticfiles/images/picto/v2/bc/day/lightcloudy.png,1.9°C,,988 hPa,93%,46%,9100 m
+2021-11-27 10:45:03.733881,/staticfiles/images/picto/v2/bc/day/cloudy.png,3.2°C,,989 hPa,89%,94%,300 m
+2021-11-27 11:45:05.617443,/staticfiles/images/picto/v2/bc/day/lightcloudy.png,4.2°C,,990 hPa,88%,54%,1600 m
+2021-11-27 12:45:04.058111,/staticfiles/images/picto/v2/bc/day/lightcloudy.png,4.9°C,,990 hPa,86%,22%,9100 m
+2021-11-27 13:45:04.293779,/staticfiles/images/picto/v2/bc/day/lightcloudy.png,5.2°C,,991 hPa,83%,29%,10400 m
+2021-11-27 14:45:03.524663,/staticfiles/images/picto/v2/bc/day/cloudy.png,4.8°C,,991 hPa,90%,99%,100 m
+2021-11-27 15:45:03.861758,/staticfiles/images/picto/v2/bc/day/cloudy.png,4.0°C,,991 hPa,87%,99%,400 m
+2021-11-27 16:45:03.615452,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,2.6°C,,991 hPa,92%,81%,9100 m
+2021-11-27 17:45:04.902099,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,2.7°C,,992 hPa,95%,80%,3900 m
+2021-11-27 18:45:03.684502,/staticfiles/images/picto/v2/bc/night/cover.png,2.6°C,,992 hPa,95%,100%,3900 m
+2021-11-27 19:45:03.790659,/staticfiles/images/picto/v2/bc/night/cover.png,2.2°C,,993 hPa,95%,100%,500 m
+2021-11-27 20:45:03.760677,/staticfiles/images/picto/v2/bc/night/cover.png,1.8°C,,993 hPa,95%,96%,400 m
+2021-11-27 21:45:04.275794,/staticfiles/images/picto/v2/bc/night/cover.png,1.5°C,,993 hPa,96%,100%,400 m
+2021-11-27 22:45:03.661765,/staticfiles/images/picto/v2/bc/night/cover.png,1.5°C,,994 hPa,100%,100%,400 m
+2021-11-27 23:45:04.638622,/staticfiles/images/picto/v2/bc/night/cover.png,1.6°C,,994 hPa,100%,100%,400 m
+2021-11-28 00:45:04.332999,/staticfiles/images/picto/v2/bc/night/cover.png,1.9°C,,994 hPa,100%,99%,400 m
+2021-11-28 01:45:03.908187,/staticfiles/images/picto/v2/bc/night/cover.png,2.2°C,,995 hPa,100%,81%,400 m
+2021-11-28 02:45:04.466632,/staticfiles/images/picto/v2/bc/night/cover.png,2.2°C,,995 hPa,96%,100%,400 m
+2021-11-28 03:45:03.578567,/staticfiles/images/picto/v2/bc/night/cover.png,2.1°C,,995 hPa,100%,100%,400 m
+2021-11-28 04:45:04.341074,/staticfiles/images/picto/v2/bc/night/cover.png,1.9°C,,996 hPa,100%,100%,400 m
+2021-11-28 05:45:04.817546,/staticfiles/images/picto/v2/bc/night/cover.png,2.6°C,,996 hPa,100%,89%,400 m
+2021-11-28 06:45:03.858886,/staticfiles/images/picto/v2/bc/night/cover.png,2.6°C,,997 hPa,100%,100%,300 m
+2021-11-28 07:45:03.784176,/staticfiles/images/picto/v2/bc/night/cover.png,2.6°C,,997 hPa,84%,92%,400 m
+2021-11-28 08:45:04.766793,/staticfiles/images/picto/v2/bc/day/cloudy.png,1.6°C,,998 hPa,97%,100%,400 m
+2021-11-28 09:45:04.265065,/staticfiles/images/picto/v2/bc/day/mostcloudy.png,2.8°C,,998 hPa,95%,89%,400 m
+2021-11-28 10:45:04.301552,/staticfiles/images/picto/v2/bc/day/cloudy.png,3.7°C,,999 hPa,93%,81%,400 m
+2021-11-28 11:45:06.085980,/staticfiles/images/picto/v2/bc/day/mostcloudy.png,4.1°C,,998 hPa,92%,100%,400 m
+2021-11-28 12:45:03.624459,/staticfiles/images/picto/v2/bc/day/mostcloudy.png,4.7°C,,999 hPa,92%,27%,9100 m
+2021-11-28 13:45:03.888042,/staticfiles/images/picto/v2/bc/day/lightrain.png,3.8°C,0.2 mm,999 hPa,93%,42%,9100 m
+2021-11-28 14:45:04.120116,/staticfiles/images/picto/v2/bc/day/rainsnow.png,2.1°C,1.0 mm,999 hPa,94%,93%,500 m
+2021-11-28 15:45:04.368716,/staticfiles/images/picto/v2/bc/day/rain.png,2.2°C,1.3 mm,1000 hPa,92%,88%,3900 m
+2021-11-28 16:45:03.540507,/staticfiles/images/picto/v2/bc/night/lightrain.png,2.2°C,0.5 mm,1000 hPa,90%,78%,3900 m
+2021-11-28 17:45:05.126498,/staticfiles/images/picto/v2/bc/night/cover.png,3.1°C,,1001 hPa,94%,75%,3900 m
+2021-11-28 18:45:03.682371,/staticfiles/images/picto/v2/bc/night/cover.png,2.5°C,,1001 hPa,98%,98%,2800 m
+2021-11-28 19:45:04.265298,/staticfiles/images/picto/v2/bc/night/cover.png,2.2°C,,1002 hPa,99%,93%,2400 m
+2021-11-28 20:45:04.154587,/staticfiles/images/picto/v2/bc/night/cover.png,2.0°C,,1002 hPa,97%,84%,2700 m
+2021-11-28 21:45:03.830767,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.9°C,,1003 hPa,93%,82%,6000 m
+2021-11-28 22:45:03.496456,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.8°C,,1003 hPa,98%,94%,4500 m
+2021-11-28 23:45:04.367145,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.4°C,,1004 hPa,97%,90%,5200 m
+2021-11-29 00:45:04.494063,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.4°C,,1004 hPa,100%,92%,10400 m
+2021-11-29 01:45:04.336676,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.4°C,,1005 hPa,94%,59%,10700 m
+2021-11-29 02:45:03.822895,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.5°C,,1005 hPa,97%,84%,7900 m
+2021-11-29 03:45:04.322841,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.4°C,,1006 hPa,94%,93%,7900 m
+2021-11-29 04:45:03.607081,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,1.8°C,,1006 hPa,94%,86%,9100 m
+2021-11-29 05:45:04.595390,/staticfiles/images/picto/v2/bc/night/cloudy.png,0.3°C,,1007 hPa,94%,55%,10400 m
+2021-11-29 06:45:04.307395,/staticfiles/images/picto/v2/bc/night/cloudy.png,0.5°C,,1008 hPa,94%,80%,8800 m
+2021-11-29 07:45:03.935438,/staticfiles/images/picto/v2/bc/night/lightcloudy.png,0.1°C,,1008 hPa,94%,92%,7900 m
+2021-11-29 08:45:04.476588,/staticfiles/images/picto/v2/bc/day/cloudy.png,1.0°C,,1009 hPa,93%,59%,11600 m
+2021-11-29 09:45:03.622846,/staticfiles/images/picto/v2/bc/day/cloudy.png,2.7°C,,1010 hPa,96%,63%,9100 m
+2021-11-29 10:45:03.537361,/staticfiles/images/picto/v2/bc/day/cloudy.png,4.3°C,,1010 hPa,83%,76%,9100 m
+2021-11-29 11:45:04.991054,/staticfiles/images/picto/v2/bc/day/cloudy.png,4.3°C,,1010 hPa,89%,78%,9100 m
+2021-11-29 12:45:04.564340,/staticfiles/images/picto/v2/bc/day/cloudy.png,6.3°C,,1010 hPa,83%,72%,9100 m
+2021-11-29 13:45:04.243282,/staticfiles/images/picto/v2/bc/day/cloudy.png,7.0°C,,1010 hPa,88%,57%,1700 m
+2021-11-29 14:45:04.197317,/staticfiles/images/picto/v2/bc/day/cloudy.png,6.7°C,,1011 hPa,77%,58%,1700 m
+2021-11-29 15:45:03.814176,/staticfiles/images/picto/v2/bc/day/cloudy.png,5.6°C,,1012 hPa,77%,71%,11600 m
+2021-11-29 16:45:04.519356,/staticfiles/images/picto/v2/bc/night/cloudy.png,4.5°C,,1012 hPa,79%,46%,9100 m
+2021-11-29 17:45:04.303727,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,3.6°C,,1013 hPa,81%,54%,5400 m
+2021-11-29 18:45:03.865184,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,3.3°C,,1014 hPa,82%,75%,6600 m
+2021-11-29 19:45:03.846642,/staticfiles/images/picto/v2/bc/night/cloudy.png,3.0°C,,1015 hPa,93%,97%,5400 m
+2021-11-29 20:45:04.245317,/staticfiles/images/picto/v2/bc/night/cloudy.png,3.0°C,,1015 hPa,91%,85%,4100 m
+2021-11-29 21:45:03.582022,/staticfiles/images/picto/v2/bc/night/cloudy.png,2.4°C,,1015 hPa,88%,84%,1900 m
+2021-11-29 22:45:03.625531,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,2.4°C,,1015 hPa,91%,57%,5300 m
+2021-11-29 23:45:04.852519,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,2.1°C,,1015 hPa,92%,94%,4100 m
+2021-11-30 00:45:03.781910,/staticfiles/images/picto/v2/bc/night/mostcloudy.png,2.4°C,,1015 hPa,89%,100%,2900 m
+2021-11-30 01:45:04.504657,/staticfiles/images/picto/v2/bc/night/cover.png,2.8°C,,1014 hPa,87%,96%,3000 m
+2021-11-30 02:45:04.254648,/staticfiles/images/picto/v2/bc/night/lightrain.png,3.1°C,0.2 mm,1013 hPa,89%,89%,1400 m
+2021-11-30 03:45:03.568809,/staticfiles/images/picto/v2/bc/night/lightrain.png,3.6°C,0.1 mm,1012 hPa,90%,97%,500 m
+2021-11-30 04:45:04.538641,/staticfiles/images/picto/v2/bc/night/lightrain.png,4.0°C,0.3 mm,1011 hPa,92%,100%,500 m
+2021-11-30 05:45:03.971104,/staticfiles/images/picto/v2/bc/night/lightrain.png,5.1°C,0.6 mm,1011 hPa,98%,96%,500 m
+2021-11-30 06:45:04.333656,/staticfiles/images/picto/v2/bc/night/lightrain.png,5.6°C,0.5 mm,1010 hPa,89%,100%,500 m
+2021-11-30 07:45:04.193649,/staticfiles/images/picto/v2/bc/night/lightrain.png,6.6°C,0.8 mm,1010 hPa,98%,100%,300 m
+2021-11-30 08:45:04.347753,/staticfiles/images/picto/v2/bc/day/lightrain.png,7.5°C,0.4 mm,1010 hPa,89%,100%,500 m
+2021-11-30 09:45:03.816108,/staticfiles/images/picto/v2/bc/day/cover.png,7.7°C,,1010 hPa,98%,100%,500 m
+2021-11-30 10:45:03.690479,/staticfiles/images/picto/v2/bc/day/lightrain.png,7.8°C,0.5 mm,1010 hPa,93%,100%,500 m
+2021-11-30 11:45:04.398411,/staticfiles/images/picto/v2/bc/day/lightrain.png,7.9°C,0.7 mm,1010 hPa,99%,100%,500 m
+2021-11-30 12:45:04.034739,/staticfiles/images/picto/v2/bc/day/lightrain.png,8.1°C,0.2 mm,1010 hPa,98%,100%,500 m
+2021-11-30 13:45:03.862361,/staticfiles/images/picto/v2/bc/day/lightrain.png,8.2°C,0.9 mm,1010 hPa,94%,100%,500 m
+2021-11-30 14:45:04.522626,/staticfiles/images/picto/v2/bc/day/lightrain.png,8.4°C,0.6 mm,1010 hPa,99%,100%,500 m
+2021-11-30 15:45:03.944931,/staticfiles/images/picto/v2/bc/day/cover.png,8.8°C,,1010 hPa,94%,100%,500 m
