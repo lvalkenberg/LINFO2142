@@ -34,8 +34,7 @@ def fusion_with_weather(csv1, csv2):
     return fusion
 
 
-#def traceroute_analyse(file="../Mesures/traceroute_measure.csv"):
-def traceroute_analyse(file="../Mesures/training.csv", outputfile="traceroute_analyse.txt"):  
+def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="traceroute_analyse.txt"):  
 
     with open(outputfile, "a") as output:
 
