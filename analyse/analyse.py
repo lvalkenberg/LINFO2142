@@ -5,6 +5,7 @@ import numpy as np
 from ast import literal_eval
 import matplotlib.pyplot as plt
 from datetime import *
+from plot_traceroute import *
 
 """
     Return mean for each measurement.
@@ -248,6 +249,8 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
                     output.write("{0} with {1} occurences\n".format(hop, serv2path_by_hop[serv][index][hop]))
         
+            
+        plot_traceroute_path_by_hop(serv2path_by_hop)
         
         
 
