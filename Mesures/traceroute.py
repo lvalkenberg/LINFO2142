@@ -10,20 +10,19 @@ def process(input, output_writer):
     values = []
 
     index = 0
-    for line in input:
+    for string_line in input:
         
-        if line[0:4] == "2021":
+        if string_line[0:4] == "2021":
             
             if index != 0:
                 output_writer.writerow([date[0:-1], serveur, path, values]) #Write the last line of the preceding date
             
-            date = line
+            date = string_line
             index = -1      # To avoid that the next line (beginning with "traceroute ...") is written in the output file
             
         
         else:
-                       
-            line = line.split()
+            line = string_line.split()
 
             if line == []:
                 continue
@@ -37,6 +36,7 @@ def process(input, output_writer):
                 ip_serv = line[3][1:-2]
                 path = []
                 values = []
+            
 
             elif line[1] == "*" and line[2] == "*" and line[3] == "*":        #serveur injoignibale
                 path.append(("*", "*"))
@@ -52,7 +52,7 @@ def process(input, output_writer):
 
             else:
                 
-                if ip_serv in line:
+                if ip_serv in string_line:
                     path.append((ip_serv, ip_serv))
                 else:
                     path.append((line[2][1:-1], line[1])) #(IP, Hostname) with IP without '(' & ')'
