@@ -163,9 +163,10 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
             if serv not in serv2path_by_hop:
                 serv2path_by_hop[serv] = {}
 
-            for index in range(len(hops)):
-                hop = hops[index]
-
+            for i in range(len(hops)):
+                hop = hops[i]
+                
+                index = i + 1   # Starting the hop at index 1
                 if index in serv2path_by_hop[serv]:
 
                     if hop in serv2path_by_hop[serv][index]:
@@ -243,7 +244,7 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
             for index in serv2path_by_hop[serv].keys():
                 
-                output.write("\nFor hop {0}, there are {1} different routeurs:\n".format(index+1, len(serv2path_by_hop[serv][index].keys()) ))
+                output.write("\nFor hop {0}, there are {1} different routeurs:\n".format(index, len(serv2path_by_hop[serv][index].keys()) ))
 
                 for hop in serv2path_by_hop[serv][index].keys():
 
