@@ -52,7 +52,7 @@ def process(input, output_writer):
 
             else:
                 
-                if ip_serv in string_line:
+                if ip_serv in string_line:      
                     path.append((ip_serv, ip_serv))
                 else:
                     path.append((line[2][1:-1], line[1])) #(IP, Hostname) with IP without '(' & ')'

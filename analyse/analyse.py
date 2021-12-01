@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from os import write
 import pandas as pd
 import numpy as np
 from ast import literal_eval
@@ -50,6 +51,9 @@ def process_path(path, serveur):
     
     return answer[0:-1] #To delete the last ","
 
+def get_hop_number(path):
+
+    return path.count("(")
 
 
 def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="traceroute_analyse.txt"):  
@@ -58,6 +62,7 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
         - We take only the paths who reach the server
         - We delete the ("*", "*") in the path
     """
+
 
     with open(outputfile, "a") as output:
 
@@ -74,17 +79,23 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
         traceroute = trace_csv["Traceroute"]
 
 
-        # ACCORDING TO THE DATE
+        ######################################
+        #          ANALYSE THE RESULTS       #
+        ######################################
+        
         for i in range(len(date)):
 
             d = date[i]
+            hour = d.split()[1].split(":")[0]
             serv = serveurs[i]
             path = process_path(traceroute[i], serv)
 
             if path == "":
                 total_discarded_path += 1
                 continue
-            
+
+
+            # ACCORDING TO THE DATE
             if serv in serv2path:
 
                 if path in serv2path[serv]:
@@ -96,23 +107,9 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
                 serv2path[serv] = {}
                 serv2path[serv][path] = [d]
-        
-        print("Total number of discarded path : {0}".format(total_discarded_path))
-        for s in serveurs.unique():
-            if s not in serv2path:
-                print("Server {0} is never reached !".format(s))
-
-        # ACCORDING TO THE HOUR
-        for i in range(len(date)):
             
-            d = date[i]
-            hour = d.split()[1].split(":")[0]
-            serv = serveurs[i]
-            path = process_path(traceroute[i], serv)
 
-            if path=="":
-                continue
-
+            #   ACCORDING TO THE HOUR
             if serv in serv2path_hour:
 
                 if hour in serv2path_hour[serv]:
@@ -127,38 +124,78 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
                 serv2path_hour[serv] = {}
                 serv2path_hour[serv][hour] = [path]
+        
 
-        #   ACCORDING TO THE LENGTH
+            #   ACCORDING TO THE LENGTH
+            if serv in serv2length:
+
+                if get_hop_number(path) in serv2length[serv]:
+                    serv2length[serv][get_hop_number(path)].append(path)
+                
+                else:
+                    serv2length[serv][get_hop_number(path)] = [path]
+            
+            else:
+                serv2length[serv] = {}
+                serv2length[serv][get_hop_number(path)] = [path]
 
 
 
-        # DIFFERENT PATH IN FUNCTION OF THE DATE
+
+
+
+        print("Total number of discarded path : {0}".format(total_discarded_path))
+        for s in serveurs.unique():
+            if s not in serv2path:
+                print("Server {0} is never reached !".format(s))          
+
+
+        #######################################
+        #           PRINT RESULTS             #
+        #######################################
+
+        output.write("="*250+"\n")
+        output.write("DIFFERENT PATH IN FUNCTION OF THE DATE\n")
         output.write("="*250+"\n\n")
-        output.write("DIFFERENT PATH IN FUNCTION OF THE DATE\n\n")
+
         for serv in serv2path.keys():
 
-            output.write("="*250+"\n")
+            output.write("-"*250+"\n")
             output.write("For server {0}, there are {1} different paths :\n".format(serv, len(serv2path[serv].keys())))
 
             for path in serv2path[serv].keys():
                 
                 output.write("{0} with {1} occurences.\n".format(path, len(serv2path[serv][path])))
-        
         print("\n")
-        # DIFFERENT PATH IN FUNCTION OF THE HOUR
-        output.write("="*250+"\n\n")
-        output.write("DIFFERENT PATH IN FUNCTION OF THE HOUR\n\n")
+        
+        output.write("="*250+"\n")
+        output.write("DIFFERENT PATH IN FUNCTION OF THE HOUR\n")
+        output.write("="*250+"\n")
+
         for serv in serv2path_hour.keys():
 
-            output.write("="*250+"\n")
+            output.write("-"*250+"\n")
             output.write("For server {0}:\n".format(serv))
 
-            for h in serv2path_hour[serv].keys():
-                
+            hours = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23"]
+            for h in hours:
                 output.write("At {0}:00 there are {1} different paths:\n".format(h, len(serv2path_hour[serv][h]) ))
                 
-                for p in serv2path_hour[serv][h]:
-                    output.write(p + "\n")
+                #for p in serv2path_hour[serv][h]:
+                #    output.write(p + "\n")
+        
+        output.write("="*250+"\n")
+        output.write("DIFFERENT PATH IN FUNCTION OF THEIR LENGTH\n")
+        output.write("="*250+"\n")
+    
+        for serv in serv2length.keys():
+
+            output.write("-"*250+"\n")
+            output.write("For server {0}:\n".format(serv))
+
+            for length in serv2length[serv].keys():
+                output.write("There are {0} paths of length {1}\n".format(len(serv2length[serv][length]), length ))
+        
         
 
 traceroute_analyse()
