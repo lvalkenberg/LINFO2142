@@ -1415,3 +1415,802 @@ There are 23 paths of length 13
 There are 21 paths of length 12
 There are 30 paths of length 16
 There are 2 paths of length 17
+==========================================================================================================================================================================================================================================================
+DIFFERENT HOPS IN THE PATH
+==========================================================================================================================================================================================================================================================
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For server iperf.biznetnetworks.com (117.102.109.186):
+
+For hop 1, there are 2 different routeurs:
+192.168.42.1 with 374 occurences
+192.168.1.1 with 1 occurences
+
+For hop 2, there are 4 different routeurs:
+192.168.1.1 with 370 occurences
+184.105.65.29 with 3 occurences
+72.52.92.86 with 1 occurences
+136.22.97.161 with 1 occurences
+
+For hop 3, there are 5 different routeurs:
+136.22.97.33 with 320 occurences
+91.206.52.170 with 4 occurences
+184.105.65.29 with 1 occurences
+136.22.97.161 with 49 occurences
+136.22.254.46 with 1 occurences
+
+For hop 4, there are 8 different routeurs:
+136.22.254.44 with 174 occurences
+142.250.160.202 with 146 occurences
+184.105.80.133 with 2 occurences
+184.104.197.42 with 2 occurences
+184.104.193.134 with 1 occurences
+136.22.254.10 with 29 occurences
+136.22.254.46 with 20 occurences
+108.170.252.19 with 1 occurences
+
+For hop 5, there are 17 different routeurs:
+194.146.118.80 with 136 occurences
+195.89.98.65 with 180 occurences
+184.104.195.25 with 2 occurences
+184.104.193.134 with 2 occurences
+184.104.197.42 with 2 occurences
+184.104.193.125 with 1 occurences
+184.104.195.14 with 2 occurences
+80.81.192.172 with 25 occurences
+108.170.252.82 with 2 occurences
+108.170.251.209 with 5 occurences
+108.170.252.83 with 3 occurences
+108.170.252.19 with 2 occurences
+108.170.251.208 with 3 occurences
+108.170.251.144 with 1 occurences
+108.170.251.145 with 3 occurences
+108.170.252.18 with 5 occurences
+72.52.92.86 with 1 occurences
+
+For hop 6, there are 19 different routeurs:
+184.104.195.25 with 173 occurences
+184.104.195.14 with 143 occurences
+184.104.195.13 with 2 occurences
+184.104.193.125 with 3 occurences
+184.104.197.42 with 1 occurences
+72.52.92.86 with 14 occurences
+27.50.33.110 with 1 occurences
+184.105.65.29 with 17 occurences
+72.14.239.167 with 1 occurences
+108.170.226.3 with 2 occurences
+209.85.242.79 with 2 occurences
+209.85.240.113 with 1 occurences
+209.85.252.77 with 2 occurences
+108.170.236.249 with 4 occurences
+108.170.228.255 with 2 occurences
+72.14.239.245 with 1 occurences
+209.85.245.30 with 3 occurences
+209.85.252.214 with 2 occurences
+184.105.80.133 with 1 occurences
+
+For hop 7, there are 11 different routeurs:
+184.105.65.29 with 77 occurences
+72.52.92.86 with 91 occurences
+184.104.195.13 with 151 occurences
+27.50.33.110 with 5 occurences
+184.105.80.133 with 14 occurences
+91.206.52.170 with 13 occurences
+209.85.142.96 with 3 occurences
+108.170.236.120 with 2 occurences
+209.85.244.158 with 14 occurences
+108.170.234.10 with 4 occurences
+184.104.193.125 with 1 occurences
+
+For hop 8, there are 19 different routeurs:
+184.105.80.133 with 83 occurences
+72.52.92.86 with 90 occurences
+91.206.52.170 with 44 occurences
+184.105.65.29 with 101 occurences
+184.104.193.134 with 6 occurences
+184.105.65.13 with 4 occurences
+182.253.100.193 with 1 occurences
+182.253.255.46 with 1 occurences
+209.85.245.231 with 12 occurences
+108.170.234.119 with 6 occurences
+209.85.142.167 with 10 occurences
+184.104.197.42 with 7 occurences
+209.85.142.100 with 1 occurences
+142.251.69.52 with 1 occurences
+108.170.237.243 with 4 occurences
+142.251.69.180 with 1 occurences
+172.253.50.74 with 1 occurences
+142.251.69.72 with 1 occurences
+74.82.50.70 with 1 occurences
+
+For hop 9, there are 21 different routeurs:
+184.105.80.133 with 97 occurences
+91.206.52.170 with 55 occurences
+184.104.193.134 with 79 occurences
+184.104.197.42 with 85 occurences
+117.102.109.186 with 4 occurences
+184.104.193.125 with 15 occurences
+184.105.65.13 with 13 occurences
+27.50.33.110 with 1 occurences
+182.253.100.234 with 1 occurences
+172.253.72.97 with 5 occurences
+209.85.142.100 with 2 occurences
+172.253.65.164 with 3 occurences
+172.253.72.147 with 1 occurences
+216.239.58.254 with 1 occurences
+142.251.69.52 with 3 occurences
+209.85.252.46 with 1 occurences
+216.239.57.136 with 1 occurences
+142.251.69.72 with 4 occurences
+172.253.65.166 with 1 occurences
+142.251.69.180 with 2 occurences
+74.82.50.70 with 1 occurences
+
+For hop 10, there are 21 different routeurs:
+184.104.197.42 with 107 occurences
+184.104.193.125 with 133 occurences
+184.104.193.134 with 69 occurences
+27.50.33.110 with 5 occurences
+184.105.65.13 with 21 occurences
+182.253.255.46 with 1 occurences
+117.102.109.186 with 1 occurences
+74.82.50.70 with 10 occurences
+142.251.69.71 with 2 occurences
+216.239.57.136 with 2 occurences
+142.251.68.239 with 1 occurences
+142.251.69.9 with 4 occurences
+182.253.100.234 with 1 occurences
+216.239.58.254 with 4 occurences
+216.239.59.0 with 3 occurences
+142.250.213.70 with 1 occurences
+142.251.69.179 with 2 occurences
+142.250.213.60 with 1 occurences
+142.251.226.162 with 1 occurences
+142.251.226.156 with 1 occurences
+209.85.143.83 with 1 occurences
+
+For hop 11, there are 21 different routeurs:
+184.104.193.125 with 133 occurences
+184.104.197.42 with 119 occurences
+184.105.65.13 with 49 occurences
+27.50.33.110 with 29 occurences
+182.253.255.185 with 2 occurences
+182.253.187.17 with 1 occurences
+142.250.213.62 with 3 occurences
+142.250.213.70 with 7 occurences
+142.251.226.162 with 2 occurences
+202.169.59.182 with 4 occurences
+142.251.226.160 with 1 occurences
+142.251.226.158 with 2 occurences
+142.251.224.213 with 1 occurences
+117.102.109.186 with 3 occurences
+142.250.213.68 with 3 occurences
+182.253.100.234 with 2 occurences
+182.253.100.193 with 1 occurences
+182.253.187.117 with 3 occurences
+142.251.226.156 with 3 occurences
+142.251.224.57 with 1 occurences
+209.85.143.83 with 1 occurences
+
+For hop 12, there are 25 different routeurs:
+182.253.100.185 with 9 occurences
+184.104.197.42 with 130 occurences
+182.253.255.189 with 11 occurences
+27.50.33.110 with 65 occurences
+184.105.65.13 with 57 occurences
+182.253.255.185 with 12 occurences
+182.253.187.17 with 12 occurences
+182.253.255.181 with 13 occurences
+182.253.187.1 with 5 occurences
+182.253.100.193 with 6 occurences
+182.253.255.46 with 6 occurences
+74.82.50.70 with 5 occurences
+117.102.109.186 with 18 occurences
+172.253.72.135 with 4 occurences
+142.251.224.57 with 2 occurences
+142.251.226.156 with 1 occurences
+209.85.247.134 with 1 occurences
+172.253.66.223 with 1 occurences
+142.251.224.65 with 2 occurences
+66.249.95.135 with 1 occurences
+209.85.143.83 with 1 occurences
+216.239.58.231 with 1 occurences
+209.85.255.221 with 2 occurences
+142.250.232.161 with 1 occurences
+209.85.255.130 with 1 occurences
+
+For hop 13, there are 17 different routeurs:
+182.253.100.185 with 17 occurences
+182.253.100.193 with 73 occurences
+184.105.65.13 with 69 occurences
+182.253.255.181 with 15 occurences
+117.102.109.186 with 29 occurences
+74.82.50.70 with 75 occurences
+182.253.187.17 with 6 occurences
+182.253.187.1 with 9 occurences
+182.253.255.46 with 21 occurences
+182.253.100.234 with 9 occurences
+182.253.255.189 with 14 occurences
+202.169.59.182 with 2 occurences
+182.253.255.185 with 6 occurences
+182.253.187.10 with 1 occurences
+108.170.237.213 with 1 occurences
+142.250.62.19 with 1 occurences
+216.239.35.155 with 1 occurences
+
+For hop 14, there are 11 different routeurs:
+117.102.109.186 with 191 occurences
+74.82.50.70 with 54 occurences
+182.253.100.193 with 31 occurences
+182.253.100.234 with 14 occurences
+202.169.59.182 with 7 occurences
+182.253.187.10 with 9 occurences
+182.253.187.117 with 10 occurences
+216.239.49.225 with 1 occurences
+216.239.49.75 with 1 occurences
+209.85.255.130 with 1 occurences
+72.14.235.61 with 1 occurences
+
+For hop 15, there are 5 different routeurs:
+117.102.109.186 with 123 occurences
+182.253.187.10 with 2 occurences
+182.253.100.234 with 1 occurences
+182.253.100.193 with 2 occurences
+182.253.187.21 with 1 occurences
+
+For hop 16, there are 1 different routeurs:
+117.102.109.186 with 6 occurences
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For server iperf.scottlinux.com (45.33.39.39):
+
+For hop 1, there are 2 different routeurs:
+192.168.42.1 with 373 occurences
+192.168.1.1 with 1 occurences
+
+For hop 2, there are 2 different routeurs:
+192.168.1.1 with 373 occurences
+136.22.97.161 with 1 occurences
+
+For hop 3, there are 3 different routeurs:
+136.22.97.33 with 324 occurences
+136.22.97.161 with 49 occurences
+136.22.254.10 with 1 occurences
+
+For hop 4, there are 5 different routeurs:
+142.250.160.202 with 167 occurences
+136.22.254.44 with 157 occurences
+136.22.254.10 with 24 occurences
+136.22.254.46 with 25 occurences
+195.219.50.189 with 1 occurences
+
+For hop 5, there are 10 different routeurs:
+195.89.98.65 with 160 occurences
+209.85.172.113 with 164 occurences
+195.219.50.189 with 29 occurences
+108.170.251.208 with 5 occurences
+108.170.251.144 with 4 occurences
+108.170.252.19 with 6 occurences
+108.170.252.83 with 3 occurences
+108.170.251.145 with 1 occurences
+108.170.251.209 with 1 occurences
+209.85.252.29 with 1 occurences
+
+For hop 6, there are 23 different routeurs:
+195.2.20.226 with 63 occurences
+80.231.245.6 with 160 occurences
+195.2.27.229 with 37 occurences
+195.2.30.33 with 63 occurences
+80.231.153.20 with 1 occurences
+108.170.229.168 with 2 occurences
+108.170.228.255 with 1 occurences
+195.219.219.72 with 18 occurences
+209.85.241.231 with 2 occurences
+108.170.236.249 with 4 occurences
+108.170.228.9 with 2 occurences
+209.85.252.214 with 1 occurences
+209.85.252.77 with 7 occurences
+209.85.242.79 with 2 occurences
+108.170.226.3 with 1 occurences
+209.85.240.113 with 1 occurences
+108.170.238.60 with 2 occurences
+209.85.245.30 with 1 occurences
+209.85.252.29 with 1 occurences
+72.14.239.245 with 2 occurences
+72.14.239.167 with 1 occurences
+209.85.241.71 with 1 occurences
+209.85.244.158 with 1 occurences
+
+For hop 7, there are 11 different routeurs:
+195.2.9.126 with 50 occurences
+195.2.16.230 with 44 occurences
+80.231.153.20 with 170 occurences
+195.2.9.42 with 58 occurences
+80.231.153.50 with 1 occurences
+195.2.2.73 with 2 occurences
+209.85.244.158 with 8 occurences
+80.231.245.6 with 23 occurences
+209.85.142.96 with 5 occurences
+108.170.236.120 with 6 occurences
+108.170.234.10 with 7 occurences
+
+For hop 8, there are 14 different routeurs:
+80.231.154.30 with 55 occurences
+80.231.153.169 with 56 occurences
+195.2.24.241 with 93 occurences
+80.231.153.50 with 43 occurences
+80.231.130.214 with 1 occurences
+80.231.154.143 with 1 occurences
+195.2.24.245 with 74 occurences
+195.2.28.34 with 1 occurences
+108.170.234.119 with 7 occurences
+80.231.153.20 with 29 occurences
+209.85.245.231 with 6 occurences
+108.170.237.243 with 6 occurences
+209.85.142.167 with 1 occurences
+209.85.142.100 with 1 occurences
+
+For hop 9, there are 18 different routeurs:
+195.2.2.153 with 65 occurences
+80.231.154.143 with 167 occurences
+195.2.28.34 with 44 occurences
+195.2.31.5 with 45 occurences
+216.6.57.6 with 1 occurences
+80.231.130.162 with 1 occurences
+80.231.130.195 with 1 occurences
+80.231.130.26 with 1 occurences
+80.231.154.30 with 10 occurences
+80.231.153.169 with 9 occurences
+80.231.153.50 with 8 occurences
+172.253.72.147 with 3 occurences
+172.253.65.166 with 1 occurences
+172.253.65.164 with 5 occurences
+172.253.72.97 with 7 occurences
+142.251.69.72 with 3 occurences
+142.251.69.52 with 2 occurences
+209.85.142.100 with 1 occurences
+
+For hop 10, there are 23 different routeurs:
+195.2.24.97 with 105 occurences
+80.231.130.23 with 14 occurences
+195.2.2.150 with 64 occurences
+80.231.130.195 with 25 occurences
+80.231.130.106 with 21 occurences
+80.231.130.20 with 20 occurences
+80.231.130.214 with 12 occurences
+80.231.130.26 with 21 occurences
+80.231.130.162 with 20 occurences
+80.231.130.102 with 19 occurences
+173.230.159.69 with 1 occurences
+63.243.128.17 with 2 occurences
+195.2.14.206 with 2 occurences
+142.251.69.9 with 5 occurences
+80.231.154.143 with 32 occurences
+216.239.57.136 with 3 occurences
+216.239.57.196 with 1 occurences
+216.239.58.254 with 1 occurences
+216.239.59.0 with 1 occurences
+142.251.67.130 with 2 occurences
+142.251.69.71 with 1 occurences
+142.251.68.239 with 1 occurences
+142.251.67.128 with 1 occurences
+
+For hop 11, there are 28 different routeurs:
+63.243.128.17 with 132 occurences
+216.6.57.6 with 33 occurences
+195.2.14.206 with 154 occurences
+216.6.33.114 with 1 occurences
+63.243.128.29 with 1 occurences
+63.243.186.16 with 1 occurences
+173.230.159.71 with 1 occurences
+173.230.159.85 with 1 occurences
+142.250.235.189 with 1 occurences
+142.251.67.142 with 8 occurences
+80.231.130.214 with 2 occurences
+80.231.130.162 with 4 occurences
+142.251.67.132 with 4 occurences
+80.231.130.23 with 3 occurences
+80.231.130.102 with 4 occurences
+80.231.130.26 with 4 occurences
+80.231.130.195 with 2 occurences
+142.251.67.138 with 5 occurences
+142.251.67.128 with 2 occurences
+80.231.130.20 with 1 occurences
+142.251.67.140 with 1 occurences
+142.250.235.179 with 1 occurences
+142.251.67.134 with 2 occurences
+80.231.130.106 with 1 occurences
+142.250.235.181 with 2 occurences
+142.251.67.136 with 1 occurences
+142.251.67.130 with 1 occurences
+142.250.235.173 with 1 occurences
+
+For hop 12, there are 23 different routeurs:
+173.230.159.71 with 34 occurences
+63.243.128.31 with 36 occurences
+66.198.111.27 with 9 occurences
+173.230.159.69 with 39 occurences
+63.243.186.16 with 14 occurences
+63.243.128.167 with 46 occurences
+173.230.159.87 with 57 occurences
+63.243.128.29 with 36 occurences
+173.230.159.85 with 35 occurences
+66.198.111.59 with 14 occurences
+45.33.39.39 with 5 occurences
+216.6.33.114 with 1 occurences
+142.250.237.175 with 1 occurences
+63.243.128.17 with 21 occurences
+142.250.235.185 with 1 occurences
+142.250.235.189 with 4 occurences
+142.250.235.175 with 3 occurences
+142.250.235.179 with 3 occurences
+216.6.57.6 with 8 occurences
+142.250.235.183 with 2 occurences
+142.251.51.42 with 2 occurences
+142.250.235.173 with 1 occurences
+142.250.235.181 with 2 occurences
+
+For hop 13, there are 13 different routeurs:
+63.243.128.17 with 16 occurences
+45.33.39.39 with 264 occurences
+216.6.33.114 with 44 occurences
+142.250.237.173 with 7 occurences
+63.243.128.29 with 10 occurences
+142.251.51.42 with 9 occurences
+142.250.237.175 with 5 occurences
+142.251.51.41 with 4 occurences
+63.243.128.31 with 4 occurences
+63.243.128.167 with 3 occurences
+66.198.111.59 with 1 occurences
+63.243.186.16 with 1 occurences
+142.250.234.134 with 1 occurences
+
+For hop 14, there are 22 different routeurs:
+45.33.39.39 with 45 occurences
+173.230.159.71 with 3 occurences
+173.230.159.69 with 7 occurences
+173.230.159.85 with 2 occurences
+63.243.128.167 with 1 occurences
+216.6.33.114 with 17 occurences
+142.250.234.140 with 3 occurences
+142.250.234.61 with 1 occurences
+142.250.234.54 with 5 occurences
+72.14.237.146 with 1 occurences
+74.125.253.150 with 2 occurences
+142.250.234.138 with 1 occurences
+216.239.58.214 with 1 occurences
+142.250.234.134 with 4 occurences
+142.250.234.56 with 2 occurences
+63.243.128.17 with 2 occurences
+72.14.237.161 with 3 occurences
+66.249.94.28 with 1 occurences
+172.253.78.55 with 1 occurences
+216.239.62.40 with 1 occurences
+173.230.159.87 with 1 occurences
+63.243.128.31 with 1 occurences
+
+For hop 15, there are 13 different routeurs:
+45.33.39.39 with 16 occurences
+173.230.159.71 with 4 occurences
+172.253.77.255 with 5 occurences
+173.230.159.87 with 8 occurences
+63.243.128.31 with 3 occurences
+172.253.78.55 with 3 occurences
+173.230.159.69 with 3 occurences
+63.243.128.167 with 3 occurences
+142.250.232.75 with 3 occurences
+173.230.159.85 with 7 occurences
+142.250.232.73 with 3 occurences
+63.243.128.29 with 1 occurences
+216.6.33.114 with 1 occurences
+
+For hop 16, there are 3 different routeurs:
+45.33.39.39 with 38 occurences
+213.52.131.176 with 2 occurences
+216.6.33.114 with 4 occurences
+
+For hop 17, there are 3 different routeurs:
+45.33.39.39 with 4 occurences
+173.230.159.71 with 1 occurences
+213.52.131.176 with 1 occurences
+
+For hop 18, there are 1 different routeurs:
+45.33.39.39 with 2 occurences
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For server speedtest.uztelecom.uz (195.158.0.242):
+
+For hop 1, there are 4 different routeurs:
+192.168.42.1 with 353 occurences
+136.22.97.33 with 18 occurences
+192.168.1.1 with 2 occurences
+136.22.97.161 with 2 occurences
+
+For hop 2, there are 6 different routeurs:
+192.168.1.1 with 353 occurences
+136.22.254.44 with 8 occurences
+142.250.160.202 with 10 occurences
+136.22.97.33 with 1 occurences
+136.22.254.46 with 2 occurences
+136.22.97.161 with 1 occurences
+
+For hop 3, there are 12 different routeurs:
+136.22.97.33 with 306 occurences
+108.170.251.209 with 4 occurences
+108.170.251.145 with 3 occurences
+108.170.251.144 with 3 occurences
+108.170.252.82 with 2 occurences
+108.170.252.19 with 1 occurences
+108.170.252.18 with 5 occurences
+108.170.251.208 with 1 occurences
+142.250.160.202 with 1 occurences
+108.170.252.83 with 1 occurences
+136.22.97.161 with 47 occurences
+136.22.254.46 with 1 occurences
+
+For hop 4, there are 12 different routeurs:
+136.22.254.44 with 155 occurences
+142.250.160.202 with 151 occurences
+142.250.234.49 with 4 occurences
+142.250.234.79 with 4 occurences
+195.158.0.242 with 2 occurences
+209.85.240.165 with 1 occurences
+142.250.234.45 with 4 occurences
+142.250.234.77 with 5 occurences
+108.170.251.208 with 1 occurences
+136.22.254.10 with 26 occurences
+136.22.254.46 with 21 occurences
+108.170.252.18 with 1 occurences
+
+For hop 5, there are 14 different routeurs:
+108.170.251.208 with 33 occurences
+108.170.251.144 with 56 occurences
+108.170.251.145 with 42 occurences
+108.170.252.19 with 39 occurences
+108.170.251.209 with 42 occurences
+108.170.252.83 with 52 occurences
+108.170.252.18 with 43 occurences
+195.158.0.242 with 17 occurences
+108.170.252.82 with 44 occurences
+209.85.240.165 with 1 occurences
+142.250.234.49 with 1 occurences
+108.170.251.197 with 1 occurences
+108.170.251.131 with 1 occurences
+142.250.234.45 with 1 occurences
+
+For hop 6, there are 7 different routeurs:
+142.250.234.79 with 81 occurences
+142.250.234.45 with 63 occurences
+142.250.234.77 with 86 occurences
+142.250.234.49 with 72 occurences
+195.158.0.242 with 49 occurences
+209.85.240.165 with 3 occurences
+87.245.246.137 with 2 occurences
+
+For hop 7, there are 3 different routeurs:
+195.158.0.242 with 263 occurences
+209.85.240.165 with 42 occurences
+87.245.233.211 with 2 occurences
+
+For hop 8, there are 4 different routeurs:
+195.158.0.242 with 35 occurences
+87.245.246.137 with 7 occurences
+87.245.238.45 with 1 occurences
+87.245.238.37 with 1 occurences
+
+For hop 9, there are 4 different routeurs:
+195.158.0.242 with 5 occurences
+87.245.233.211 with 2 occurences
+195.69.191.44 with 1 occurences
+195.69.189.44 with 1 occurences
+
+For hop 10, there are 2 different routeurs:
+195.158.0.242 with 2 occurences
+195.69.189.32 with 2 occurences
+
+For hop 11, there are 2 different routeurs:
+195.69.189.255 with 1 occurences
+195.69.189.249 with 1 occurences
+
+For hop 12, there are 2 different routeurs:
+84.54.64.206 with 1 occurences
+195.69.189.249 with 1 occurences
+
+For hop 13, there are 2 different routeurs:
+84.54.64.26 with 1 occurences
+84.54.64.206 with 1 occurences
+
+For hop 14, there are 1 different routeurs:
+195.158.0.242 with 2 occurences
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+For server lille.testdebit.info (89.84.1.234):
+
+For hop 1, there are 4 different routeurs:
+192.168.42.1 with 345 occurences
+136.22.97.33 with 26 occurences
+136.22.97.161 with 2 occurences
+192.168.1.1 with 1 occurences
+
+For hop 2, there are 6 different routeurs:
+192.168.1.1 with 344 occurences
+142.250.160.202 with 13 occurences
+136.22.254.44 with 13 occurences
+136.22.254.46 with 1 occurences
+136.22.97.161 with 2 occurences
+136.22.254.10 with 1 occurences
+
+For hop 3, there are 8 different routeurs:
+136.22.97.33 with 298 occurences
+209.85.172.113 with 13 occurences
+195.89.98.65 with 13 occurences
+136.22.254.44 with 1 occurences
+136.22.97.161 with 45 occurences
+108.170.251.145 with 1 occurences
+136.22.254.10 with 2 occurences
+195.219.50.189 with 1 occurences
+
+For hop 4, there are 11 different routeurs:
+142.250.160.202 with 121 occurences
+136.22.254.44 with 177 occurences
+195.2.27.229 with 10 occurences
+130.117.15.85 with 16 occurences
+195.89.98.65 with 1 occurences
+136.22.254.10 with 23 occurences
+136.22.254.46 with 22 occurences
+80.231.65.21 with 1 occurences
+108.170.252.83 with 1 occurences
+108.170.228.9 with 1 occurences
+195.219.50.189 with 1 occurences
+
+For hop 5, there are 19 different routeurs:
+209.85.172.113 with 144 occurences
+195.89.98.65 with 154 occurences
+130.117.0.1 with 10 occurences
+130.117.1.118 with 9 occurences
+130.117.14.73 with 7 occurences
+130.117.15.85 with 1 occurences
+195.219.50.189 with 24 occurences
+108.170.252.82 with 3 occurences
+108.170.252.18 with 3 occurences
+108.170.251.208 with 3 occurences
+209.85.253.185 with 1 occurences
+108.170.251.144 with 3 occurences
+209.85.252.77 with 1 occurences
+108.170.251.145 with 2 occurences
+108.170.251.209 with 4 occurences
+130.117.15.113 with 1 occurences
+108.170.252.19 with 1 occurences
+108.170.252.83 with 2 occurences
+209.85.242.79 with 1 occurences
+
+For hop 6, there are 19 different routeurs:
+195.2.27.229 with 138 occurences
+130.117.15.85 with 159 occurences
+154.54.58.238 with 9 occurences
+154.54.58.234 with 8 occurences
+130.117.0.1 with 7 occurences
+130.117.1.118 with 5 occurences
+80.231.65.21 with 21 occurences
+209.85.252.214 with 3 occurences
+130.117.15.113 with 2 occurences
+108.170.228.9 with 5 occurences
+108.170.226.3 with 1 occurences
+209.85.245.30 with 1 occurences
+108.170.230.208 with 1 occurences
+209.85.240.113 with 4 occurences
+209.85.252.149 with 1 occurences
+108.170.238.60 with 4 occurences
+209.85.252.77 with 3 occurences
+72.14.239.245 with 1 occurences
+209.85.242.79 with 1 occurences
+
+For hop 7, there are 13 different routeurs:
+130.117.0.1 with 121 occurences
+130.117.14.73 with 64 occurences
+130.117.1.118 with 108 occurences
+154.54.58.238 with 6 occurences
+130.117.1.46 with 9 occurences
+154.54.58.234 with 10 occurences
+130.117.0.166 with 11 occurences
+209.85.252.149 with 7 occurences
+130.117.15.113 with 18 occurences
+209.85.253.185 with 7 occurences
+209.85.251.177 with 8 occurences
+216.239.50.187 with 4 occurences
+209.85.251.58 with 1 occurences
+
+For hop 8, there are 20 different routeurs:
+154.54.58.238 with 132 occurences
+154.54.58.234 with 116 occurences
+149.14.121.234 with 22 occurences
+130.117.0.1 with 37 occurences
+130.117.1.46 with 5 occurences
+130.117.1.118 with 29 occurences
+130.117.0.166 with 9 occurences
+209.85.251.217 with 2 occurences
+108.170.230.204 with 3 occurences
+209.85.142.200 with 2 occurences
+209.85.251.58 with 4 occurences
+72.14.238.52 with 3 occurences
+72.14.238.62 with 2 occurences
+209.85.248.116 with 1 occurences
+72.14.238.54 with 2 occurences
+72.14.204.79 with 1 occurences
+209.85.251.178 with 1 occurences
+108.170.230.208 with 1 occurences
+108.170.238.163 with 1 occurences
+142.250.226.47 with 1 occurences
+
+For hop 9, there are 12 different routeurs:
+130.117.1.46 with 123 occurences
+130.117.0.166 with 129 occurences
+154.54.58.234 with 35 occurences
+62.34.2.57 with 24 occurences
+149.14.121.234 with 10 occurences
+154.54.58.238 with 37 occurences
+142.250.226.23 with 4 occurences
+142.250.226.39 with 3 occurences
+72.14.232.181 with 1 occurences
+72.14.221.243 with 1 occurences
+142.250.226.47 with 3 occurences
+142.250.226.29 with 4 occurences
+
+For hop 10, there are 8 different routeurs:
+149.14.121.234 with 236 occurences
+130.117.0.166 with 48 occurences
+130.117.1.46 with 53 occurences
+212.194.171.71 with 19 occurences
+89.89.100.97 with 2 occurences
+62.34.2.57 with 13 occurences
+212.194.171.1 with 1 occurences
+72.14.204.79 with 2 occurences
+
+For hop 11, there are 13 different routeurs:
+62.34.2.57 with 245 occurences
+149.14.121.234 with 67 occurences
+89.89.100.97 with 25 occurences
+212.194.171.71 with 10 occurences
+72.14.204.69 with 1 occurences
+72.14.204.79 with 8 occurences
+72.14.232.181 with 3 occurences
+62.34.2.91 with 1 occurences
+209.85.143.172 with 5 occurences
+72.14.237.24 with 4 occurences
+74.125.51.61 with 1 occurences
+212.194.39.41 with 2 occurences
+62.34.2.113 with 2 occurences
+
+For hop 12, there are 10 different routeurs:
+212.194.171.71 with 221 occurences
+62.34.2.57 with 77 occurences
+89.89.100.97 with 32 occurences
+89.84.1.234 with 21 occurences
+212.194.39.41 with 4 occurences
+62.34.2.113 with 5 occurences
+72.14.204.69 with 5 occurences
+212.194.171.1 with 2 occurences
+72.14.221.243 with 3 occurences
+62.34.2.91 with 4 occurences
+
+For hop 13, there are 6 different routeurs:
+89.89.100.97 with 261 occurences
+89.84.1.234 with 23 occurences
+212.194.171.71 with 58 occurences
+62.34.2.57 with 6 occurences
+212.194.171.1 with 3 occurences
+62.34.2.91 with 2 occurences
+
+For hop 14, there are 4 different routeurs:
+89.89.100.97 with 165 occurences
+89.84.1.234 with 151 occurences
+212.194.171.71 with 11 occurences
+212.194.171.1 with 3 occurences
+
+For hop 15, there are 3 different routeurs:
+89.84.1.234 with 147 occurences
+89.89.100.97 with 18 occurences
+212.194.171.71 with 14 occurences
+
+For hop 16, there are 2 different routeurs:
+89.84.1.234 with 30 occurences
+89.89.100.97 with 2 occurences
+
+For hop 17, there are 1 different routeurs:
+89.84.1.234 with 2 occurences

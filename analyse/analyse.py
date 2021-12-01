@@ -51,9 +51,24 @@ def process_path(path, serveur):
     
     return answer[0:-1] #To delete the last ","
 
-def get_hop_number(path):
+def get_number_of_hop(path):
 
     return path.count("(")
+
+
+def get_hop_index(path):
+
+    hops = []
+
+    j = 0
+    for i in path[1:-1].split(","):
+        i = i.strip()
+        
+        if j%2 == 0:
+            hops.append(i[2:-1])
+        j+=1
+    
+    return hops
 
 
 def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="traceroute_analyse.txt"):  
@@ -68,9 +83,10 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
         total_discarded_path = 0
 
-        serv2path = {}  #<Serveurs, <path, [date]>>         => To compare all the different path
-        serv2path_hour = {}  #<Serveurs, <hour, [path]>>    => To find pattern in the path according to the hours
-        serv2length = {}     #<Serveurs, <length, [path]>>  => To compare the length
+        serv2path = {}          #<Serveur, <path, [date]>>                      => To compare all the different path
+        serv2path_hour = {}     #<Serveur, <hour, [path]>>                      => To find pattern in the path according to the hours
+        serv2length = {}        #<Serveur, <length, [path]>>                    => To compare the length
+        serv2path_by_hop = {}   #<Serveur, <hop index, <hop, occurence>>>    => To anaylse the path hop by hop          
 
         trace_csv = pd.read_csv(file)
         
@@ -129,19 +145,38 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
             #   ACCORDING TO THE LENGTH
             if serv in serv2length:
 
-                if get_hop_number(path) in serv2length[serv]:
-                    serv2length[serv][get_hop_number(path)].append(path)
+                if get_number_of_hop(path) in serv2length[serv]:
+                    serv2length[serv][get_number_of_hop(path)].append(path)
                 
                 else:
-                    serv2length[serv][get_hop_number(path)] = [path]
+                    serv2length[serv][get_number_of_hop(path)] = [path]
             
             else:
                 serv2length[serv] = {}
-                serv2length[serv][get_hop_number(path)] = [path]
+                serv2length[serv][get_number_of_hop(path)] = [path]
 
 
+            #   PATH HOP BY HOP
+            hops = get_hop_index(path)      # List of all the hops of the path
+            
+            if serv not in serv2path_by_hop:
+                serv2path_by_hop[serv] = {}
 
+            for index in range(len(hops)):
+                hop = hops[index]
 
+                if index in serv2path_by_hop[serv]:
+
+                    if hop in serv2path_by_hop[serv][index]:
+                        serv2path_by_hop[serv][index][hop] += 1
+                    
+                    else:
+                        serv2path_by_hop[serv][index][hop] = 1
+                
+                else:
+                    serv2path_by_hop[serv][index] = {}
+                    serv2path_by_hop[serv][index][hop] = 1
+            
 
 
         print("Total number of discarded path : {0}".format(total_discarded_path))
@@ -195,6 +230,24 @@ def traceroute_analyse(file="../data2/measure_traceroute.csv", outputfile="trace
 
             for length in serv2length[serv].keys():
                 output.write("There are {0} paths of length {1}\n".format(len(serv2length[serv][length]), length ))
+
+        output.write("="*250+"\n")
+        output.write("DIFFERENT HOPS IN THE PATH\n")
+        output.write("="*250+"\n")
+
+        for serv in serv2path_by_hop.keys():
+
+            output.write("-"*250+"\n")
+            output.write("For server {0}:\n".format(serv))
+
+            for index in serv2path_by_hop[serv].keys():
+                
+                output.write("\nFor hop {0}, there are {1} different routeurs:\n".format(index+1, len(serv2path_by_hop[serv][index].keys()) ))
+
+                for hop in serv2path_by_hop[serv][index].keys():
+
+                    output.write("{0} with {1} occurences\n".format(hop, serv2path_by_hop[serv][index][hop]))
+        
         
         
 
