@@ -24,7 +24,7 @@ def plot_traceroute_path_by_hop(dic):
 
         dic_Y["others"] = Y #Add "others" parametre for rare hop
     
-        plt.figure(figsize=(9,7))
+        
         plt.title("Traceroute analysis for server "+serv)
         OTHERS = np.array([0 for i in range(len(dic[serv].keys()))])
         for index in dic[serv].keys():
@@ -33,7 +33,7 @@ def plot_traceroute_path_by_hop(dic):
 
                 if (dic[serv][index][hop] < get_tot_index_occ(dic[serv][index]) * 0.15):     # if less than 25% of total occurence then consider it as "others"
                     new_OTHERS = Y
-                    new_OTHERS[index] = dic[serv][index][hop]
+                    new_OTHERS[index] = dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
                     dic_Y["others"] += np.array(new_OTHERS)
 
                 else:
@@ -41,7 +41,7 @@ def plot_traceroute_path_by_hop(dic):
                         dic_Y[hop] = Y
                     
                     thisY = Y
-                    thisY[index] =  dic[serv][index][hop]
+                    thisY[index] =  dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
                     dic_Y[hop] += np.array(thisY)
         
 
@@ -51,7 +51,7 @@ def plot_traceroute_path_by_hop(dic):
                 plt.bar(X, np.array(dic_Y[key]), label=key)
 
         plt.legend()
-        plt.ylim(4)
+        #plt.ylim(4)
         plt.show()
 
         
