@@ -21,50 +21,45 @@ def plot_traceroute_path_by_hop(dic):
         dic_Y = {}      #<hop, Y>
 
         X = [i for i in range(len(dic[serv].keys())+1)]          # Hop index
-        Y = [0 for i in range(len(dic[serv].keys())+1)]          # % of each different hop
-
-        dic_Y["others"] = Y #Add "others" parametre for rare hop
-    
+        dic_Y["others"] = np.zeros(len(dic[serv].keys())+1)
         
         plt.title("Traceroute analysis for server "+serv)
-        OTHERS = np.array([0 for i in range(len(dic[serv].keys()))])
         for index in dic[serv].keys():
 
             for hop in dic[serv][index].keys():
 
-                if (dic[serv][index][hop] < get_tot_index_occ(dic[serv][index]) * 0.15):     # if less than 25% of total occurence then consider it as "others"
-                    new_OTHERS = Y
-                    new_OTHERS[index] = dic[serv][index][hop]
+                if (dic[serv][index][hop] < (get_tot_index_occ(dic[serv][index]) * 0.10)):     # if less than 15% of total occurence then consider it as "others"
+                    new_OTHERS = np.zeros(len(dic[serv].keys())+1)
+                    new_OTHERS[index] = dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
                     dic_Y["others"] = np.array(dic_Y["others"]) + np.array(new_OTHERS)
 
                 else:
                     if hop not in dic_Y:
-                        dic_Y[hop] = Y
+                        dic_Y[hop] = np.zeros(len(dic[serv].keys())+1)
                     
-                    thisY = Y
-                    thisY[index] =  dic[serv][index][hop]
+                    thisY = np.zeros(len(dic[serv].keys())+1)
+                    thisY[index] =  dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
                     dic_Y[hop] =  np.array(dic_Y[hop]) + np.array(thisY)
         
-        #plot_colors = ["red", "yellow", "green", "blue", "orange", "grey", "pink"]
-        plot_colors = ["dimgray", "silver", "indianred", "maroon", "red", "coral", "sienna", "sandybrown", "orange", "gold", "olive", "yellow", "lawngreen", 
-                        "green", "forestgreen", "lime", "turquoise", "deepskyblue", "blue", "indigo", "fuchsia", "hotpink"]
+        plot_colors = ["dimgray", "silver", "indianred", "maroon", "red", "coral", "sienna", "sandybrown", "orange", "gold", "olive", "yellow", 
+                        "green", "forestgreen", "lime", "turquoise", "deepskyblue", "blue", "indigo", "fuchsia", "hotpink", "lightgreen", "darkred"]
+        
         random.shuffle(plot_colors)
-        plt.bar(X, np.array(dic_Y["others"]), label="others", color="black")
-        i = 0
+        i = random.randint(0,len(plot_colors)-1)
+        old_bottom = np.zeros(len(dic[serv].keys())+1)
         for key in dic_Y.keys():
-            if key != "others":
-                thisY = []
-                for val in  dic_Y[key]:
-                    if val > 10:
-                        thisY.append(val)
-                    else:
-                        thisY.append(0)
 
-                plt.bar(X, np.array(thisY), label=key, color=plot_colors[i%len(plot_colors)])
-                i+=1
+            if key=="others":
+                plt.bar(X, np.array(dic_Y[key]), label=key, bottom=old_bottom, color="black")
+            else:
+                plt.bar(X, np.array(dic_Y[key]), label=key, bottom=old_bottom, color=plot_colors[i%len(plot_colors)])
+            i+=1
 
-        print(dic_Y.items())
-        plt.legend()
+            old_bottom+=np.array(dic_Y[key])
+
+        plt.legend(title="IP adress of the routers")
+        plt.xlabel("Hop index")
+        plt.ylabel("Occurence of the router (in %)")
         plt.xlim(0.5)
         plt.show()
 
