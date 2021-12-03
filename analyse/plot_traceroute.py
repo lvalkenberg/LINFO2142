@@ -30,7 +30,7 @@ def plot_traceroute_path_by_hop(dic):
 
                 if (dic[serv][index][hop] < (get_tot_index_occ(dic[serv][index]) * 0.10)):     # if less than 15% of total occurence then consider it as "others"
                     new_OTHERS = np.zeros(len(dic[serv].keys())+1)
-                    new_OTHERS[index] = dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
+                    new_OTHERS[index] = dic[serv][index][hop] #/ get_tot_index_occ(dic[serv][index])
                     dic_Y["others"] = np.array(dic_Y["others"]) + np.array(new_OTHERS)
 
                 else:
@@ -38,7 +38,7 @@ def plot_traceroute_path_by_hop(dic):
                         dic_Y[hop] = np.zeros(len(dic[serv].keys())+1)
                     
                     thisY = np.zeros(len(dic[serv].keys())+1)
-                    thisY[index] =  dic[serv][index][hop] / get_tot_index_occ(dic[serv][index])
+                    thisY[index] =  dic[serv][index][hop] #/ get_tot_index_occ(dic[serv][index])
                     dic_Y[hop] =  np.array(dic_Y[hop]) + np.array(thisY)
         
         plot_colors = ["dimgray", "silver", "indianred", "maroon", "red", "coral", "sienna", "sandybrown", "orange", "gold", "olive", "yellow", 
@@ -59,7 +59,7 @@ def plot_traceroute_path_by_hop(dic):
 
         plt.legend(title="IP adress of the routers")
         plt.xlabel("Hop index")
-        plt.ylabel("Occurence of the router (in %)")
+        plt.ylabel("Occurence of the router")
         plt.xlim(0.5)
         plt.show()
 
