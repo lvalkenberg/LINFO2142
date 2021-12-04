@@ -10,7 +10,7 @@ Run bw_measure from /Mesures with ```python3 bw_measure.py destination.csv ```
 
 ## Weather scrapping
 
-Run scrapping from with ```python3 scrapping.py destination.csv```
+Run scrapping from /Mesures with ```python3 scrapping.py destination.csv```
 
 ## Traceroute
 
@@ -19,3 +19,11 @@ To launch the traceroute analysis, first you need to run in Mesures ```python3 t
 ## Packages
 
 pip3 install ping3 dnspython speedtest-cli
+
+## Data
+
+The data directory contains the data we used, mainly data_fusion (all the measure done with the satellite) and data_home (measure done with Proximus).
+
+## Analyse
+
+/analyse contains the script used for the analyse of the data.
