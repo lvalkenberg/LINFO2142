@@ -1,5 +1,16 @@
 # LINFO2142
 
+## Pings Measures
+
+Run ping_measure from /Mesures with ```python3 ping_measure.py destination.csv (numbre of measures)```
+
+## Bandwidth Measures
+
+Run bw_measure from /Mesures with ```python3 bw_measure.py destination.csv ```
+
+## Weather scrapping
+
+Run scrapping from with ```python3 scrapping.py destination.csv```
 
 ## Traceroute
 
